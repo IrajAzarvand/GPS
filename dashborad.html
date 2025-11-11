@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کاربری - فروشگاه GPS</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        :root {
+            --primary: #3498db;
+            --primary-dark: #2980b9;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #7f8c8d;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Vazir', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* هدر */
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 18px 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: translateY(-2px);
+        }
+        
+        .logo i {
+            margin-left: 12px;
+            font-size: 30px;
+            color: var(--light);
+        }
+        
+        .logo span {
+            background: linear-gradient(to right, #fff, #e0f7fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul li a i {
+            margin-right: 8px;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        nav ul li a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .user-profile {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 15px;
+            border-radius: 50px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .user-profile:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .user-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+        
+        .user-profile:hover .user-avatar {
+            transform: scale(1.1);
+        }
+        
+        .user-name {
+            font-weight: 500;
+        }
+        
+        .notification-bell {
+            position: relative;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .notification-bell:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px) scale(1.1);
+        }
+        
+        .notification-count {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--accent);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        /* پنل کاربری */
+        .dashboard {
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        
+        /* سایدبار */
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, var(--secondary), #34495e);
+            color: white;
+            border-radius: 20px;
+            padding: 25px 0;
+            box-shadow: var(--shadow);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+        
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.05), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+        
+        .sidebar:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .sidebar-header {
+            padding: 0 25px 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-header h2 {
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sidebar-header h2 i {
+            margin-left: 10px;
+            color: var(--primary);
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 8px;
+        }
+        
+        .sidebar-menu a {
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sidebar-menu a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: right 0.5s;
+        }
+        
+        .sidebar-menu a:hover::before {
+            right: 100%;
+        }
+        
+        .sidebar-menu a:hover, .sidebar-menu a.active {
+            background: linear-gradient(90deg, rgba(52, 152, 219, 0.2), transparent);
+            color: white;
+            padding-right: 30px;
+        }
+        
+        .sidebar-menu a.active {
+            border-right: 4px solid var(--primary);
+        }
+        
+        .sidebar-menu i {
+            margin-left: 15px;
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .sidebar-menu .badge {
+            background-color: var(--accent);
+            color: white;
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 12px;
+            margin-right: auto;
+        }
+        
+        /* محتوای اصلی */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .welcome-banner {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .welcome-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: cover;
+        }
+        
+        .welcome-banner h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .welcome-banner p {
+            font-size: 18px;
+            max-width: 600px;
+            opacity: 0.9;
+            position: relative;
+        }
+        
+        .stats-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-left: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .stat-card:hover .stat-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .stat-info h3 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .stat-info p {
+            color: var(--gray);
+            font-size: 15px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light);
+        }
+        
+        .card-title {
+            font-size: 22px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-title i {
+            margin-left: 12px;
+            color: var(--primary);
+        }
+        
+        .see-all {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+        
+        .see-all i {
+            margin-right: 8px;
+            transition: var(--transition);
+        }
+        
+        .see-all:hover {
+            color: var(--primary-dark);
+        }
+        
+        .see-all:hover i {
+            transform: translateX(-5px);
+        }
+        
+        .devices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .device-card {
+            border: 1px solid var(--light);
+            border-radius: 16px;
+            padding: 25px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .device-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.03), transparent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .device-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.1);
+        }
+        
+        .device-card:hover::before {
+            opacity: 1;
+        }
+        
+        .device-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .device-name {
+            font-weight: bold;
+            color: var(--dark);
+            font-size: 18px;
+        }
+        
+        .device-status {
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .status-active {
+            background-color: rgba(39, 174, 96, 0.15);
+            color: var(--success);
+        }
+        
+        .status-inactive {
+            background-color: rgba(231, 76, 60, 0.15);
+            color: var(--accent);
+        }
+        
+        .device-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        
+        .device-info-label {
+            color: var(--gray);
+        }
+        
+        .device-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            gap: 8px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            box-shadow: none;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+        
+        .orders-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .orders-table th, .orders-table td {
+            padding: 15px;
+            text-align: right;
+            border-bottom: 1px solid var(--light);
+        }
+        
+        .orders-table th {
+            background-color: #f8f9fa;
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        .orders-table tr {
+            transition: var(--transition);
+        }
+        
+        .orders-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .status-badge {
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .status-delivered {
+            background-color: rgba(39, 174, 96, 0.15);
+            color: var(--success);
+        }
+        
+        .status-pending {
+            background-color: rgba(243, 156, 18, 0.15);
+            color: var(--warning);
+        }
+        
+        .status-shipped {
+            background-color: rgba(52, 152, 219, 0.15);
+            color: var(--primary);
+        }
+        
+        /* انیمیشن‌ها */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        /* ریسپانسیو */
+        @media (max-width: 1200px) {
+            .dashboard {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+            }
+            
+            .sidebar-menu {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .stats-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .devices-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .orders-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>فروشگاه GPS</span>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active"><i class="fas fa-home"></i>خانه</a></li>
+                        <li><a href="products.html"><i class="fas fa-satellite-dish"></i>محصولات</a></li>
+                        <li><a href="categories.html"><i class="fas fa-th-large"></i>دسته‌بندی‌ها</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i>درباره ما</a></li>
+                        <li><a href="contact.html"><i class="fas fa-phone-alt"></i>تماس با ما</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">۳</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="user-avatar">ع</div>
+                        <div class="user-name">علی محمدی</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- پنل کاربری -->
+    <div class="container">
+        <div class="dashboard">
+            <!-- سایدبار -->
+            <aside class="sidebar fade-in">
+                <div class="sidebar-header">
+                    <h2><i class="fas fa-user-circle"></i>پنل کاربری</h2>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i>داشبورد</a></li>
+                    <li><a href="#"><i class="fas fa-satellite-dish"></i>دستگاه‌های من <span class="badge">۴</span></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i>سفارشات <span class="badge">۲</span></a></li>
+                    <li><a href="#"><i class="fas fa-credit-card"></i>پرداخت‌ها</a></li>
+                    <li><a href="#"><i class="fas fa-map-marked-alt"></i>نقشه زنده</a></li>
+                    <li><a href="#"><i class="fas fa-user-edit"></i>پروفایل</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i>تنظیمات</a></li>
+                    <li><a href="#"><i class="fas fa-headset"></i>پشتیبانی</a></li>
+                </ul>
+            </aside>
+
+            <!-- محتوای اصلی -->
+            <main class="main-content">
+                <div class="welcome-banner fade-in">
+                    <h1>سلام، علی محمدی!</h1>
+                    <p>به پنل کاربری خود خوش آمدید. از اینجا می‌توانید دستگاه‌ها و سفارشات خود را مدیریت کنید.</p>
+                </div>
+
+                <div class="stats-cards">
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #e8f6f3, #abebc6); color: #27ae60;">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>۴</h3>
+                            <p>دستگاه فعال</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #eaf2f8, #aed6f1); color: #3498db;">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>۷</h3>
+                            <p>سفارشات</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #fef9e7, #f9e79f); color: #f39c12;">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>۴.۸</h3>
+                            <p>امتیاز شما</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #fdedec, #f5b7b1); color: #e74c3c;">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>۳</h3>
+                            <p>اعلان‌ها</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-satellite-dish"></i>دستگاه‌های من</h2>
+                        <a href="#" class="see-all">مشاهده همه <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    
+                    <div class="devices-grid">
+                        <div class="device-card">
+                            <div class="device-header">
+                                <div class="device-name">ردیاب خودرو پراید</div>
+                                <div class="device-status status-active">فعال</div>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">مدل:</span>
+                                <span>GT-800</span>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">شماره سریال:</span>
+                                <span>GPS-823749</span>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">آخرین موقعیت:</span>
+                                <span>تهران، میدان انقلاب</span>
+                            </div>
+                            <div class="device-actions">
+                                <a href="#" class="btn btn-sm"><i class="fas fa-map-marker-alt"></i>مشاهده موقعیت</a>
+                                <a href="#" class="btn btn-outline btn-sm"><i class="fas fa-cog"></i>تنظیمات</a>
+                            </div>
+                        </div>
+                        
+                        <div class="device-card">
+                            <div class="device-header">
+                                <div class="device-name">ردیاب شخصی</div>
+                                <div class="device-status status-active">فعال</div>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">مدل:</span>
+                                <span>PT-200</span>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">شماره سریال:</span>
+                                <span>GPS-529837</span>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">آخرین موقعیت:</span>
+                                <span>تهران، پارک لاله</span>
+                            </div>
+                            <div class="device-actions">
+                                <a href="#" class="btn btn-sm"><i class="fas fa-map-marker-alt"></i>مشاهده موقعیت</a>
+                                <a href="#" class="btn btn-outline btn-sm"><i class="fas fa-cog"></i>تنظیمات</a>
+                            </div>
+                        </div>
+                        
+                        <div class="device-card">
+                            <div class="device-header">
+                                <div class="device-name">ردیاب سگ</div>
+                                <div class="device-status status-inactive">غیرفعال</div>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">مدل:</span>
+                                <span>PET-100</span>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">شماره سریال:</span>
+                                <span>GPS-174629</span>
+                            </div>
+                            <div class="device-info">
+                                <span class="device-info-label">آخرین موقعیت:</span>
+                                <span>تهران، محله زعفرانیه</span>
+                            </div>
+                            <div class="device-actions">
+                                <a href="#" class="btn btn-sm"><i class="fas fa-power-off"></i>فعال‌سازی</a>
+                                <a href="#" class="btn btn-outline btn-sm"><i class="fas fa-cog"></i>تنظیمات</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-clipboard-list"></i>آخرین سفارشات</h2>
+                        <a href="#" class="see-all">مشاهده همه <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>شماره سفارش</th>
+                                <th>تاریخ</th>
+                                <th>محصول</th>
+                                <th>مبلغ</th>
+                                <th>وضعیت</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-8293</td>
+                                <td>۱۴۰۲/۰۵/۲۳</td>
+                                <td>ردیاب خودرو GT-800</td>
+                                <td>۲,۴۹۰,۰۰۰ تومان</td>
+                                <td><span class="status-badge status-delivered">تحویل شده</span></td>
+                                <td><a href="#" class="btn btn-outline btn-sm">جزئیات</a></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-7182</td>
+                                <td>۱۴۰۲/۰۵/۱۵</td>
+                                <td>ردیاب حیوانات PET-100</td>
+                                <td>۱,۲۹۰,۰۰۰ تومان</td>
+                                <td><span class="status-badge status-shipped">ارسال شده</span></td>
+                                <td><a href="#" class="btn btn-outline btn-sm">پیگیری</a></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-6294</td>
+                                <td>۱۴۰۲/۰۵/۰۸</td>
+                                <td>سیم کارت مخصوص ردیاب</td>
+                                <td>۱۵۰,۰۰۰ تومان</td>
+                                <td><span class="status-badge status-pending">در انتظار پرداخت</span></td>
+                                <td><a href="#" class="btn btn-sm">پرداخت</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // اسکریپت برای افکت fade-in
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 0.6s ease forwards';
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+            
+            // شبیه‌سازی بارگذاری با تاخیر برای افکت‌ها
+            setTimeout(() => {
+                document.querySelectorAll('.stat-card, .device-card').forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }, 300);
+        });
+    </script>
+</body>
+</html>
