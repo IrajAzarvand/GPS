@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %} | صفحه اصلی{% endblock %}
 
 {% block hero %}
 <!-- بخش هیرو -->
-<section class="hero">
+<section class="hero" style="background-image: url('{% static 'images/header.jpeg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="container">
         <h1>ردیاب‌های هوشمند برای زندگی مدرن</h1>
         <p>با جدیدترین تکنولوژی‌های ردیابی، امنیت خودرو، عزیزان و حیوانات خانگی خود را تضمین کنید</p>

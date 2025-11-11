@@ -1,0 +1,591 @@
+{"timestamp": "2025-11-11 21:47:04,977", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:47:12,973", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:47:45,974", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:47:46,067", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:47:46,103", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:47:52,647", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:47:52,680", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:47:52,776", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:48:14,969", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 301 0"}
+{"timestamp": "2025-11-11 21:48:15,005", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04Àê´Ê3"6ÄU7{[¨3Ì\x8c\x7f\x14²b¨¥¿Ú\x8bÇ')"}
+{"timestamp": "2025-11-11 21:48:15,005", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:48:15,030", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00')"}
+{"timestamp": "2025-11-11 21:48:15,031", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:48:26,516", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:48:33,978", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sªª\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04À*É=vGÍ)\x82\x03?{\x93\x91Òh\x9aX\x17LË¯\x84aV¬q\x80x\x01\x89\x12Q\x84ú\x99~-áe»\x8c')"}
+{"timestamp": "2025-11-11 21:48:33,979", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:48:33,993", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00ú\x00\x00\x01\x00\x01')"}
+{"timestamp": "2025-11-11 21:48:33,993", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:50:11,008", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x12»CVô¡øvgðy')"}
+{"timestamp": "2025-11-11 21:50:11,008", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:50:11,011", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x11Aÿ\x1a\x0fPPrÍ\x03')"}
+{"timestamp": "2025-11-11 21:50:11,012", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:50:19,509", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:50:26,024", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ("\x17ºÐ'â§Ë\x81\x10u\x05ZO\x16úyL*|k\x97B\x7fì")"}
+{"timestamp": "2025-11-11 21:50:26,025", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:50:26,038", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('àMSQ\x04t\x03|MLn*\x9aU\x92wm2\x13\x00')"}
+{"timestamp": "2025-11-11 21:50:26,039", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:53:38,018", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('Lökã±\x86<¼°ýå\x86ÌÅO:Ô6_µ¾4\x1afmCwPÅ¬Ê')"}
+{"timestamp": "2025-11-11 21:53:38,018", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:53:38,046", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00')"}
+{"timestamp": "2025-11-11 21:53:38,046", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:53:44,261", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ("ÙF\x86#\x89h´j¦ÞªSq©©³É¾%\x18&\x94\x94°'I")"}
+{"timestamp": "2025-11-11 21:53:44,262", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:53:44,264", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Súú\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00')"}
+{"timestamp": "2025-11-11 21:53:44,265", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:53:52,127", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ë7ÈÙ\x13\x98^}þ·\x00')"}
+{"timestamp": "2025-11-11 21:53:52,128", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:53:52,130", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')"}
+{"timestamp": "2025-11-11 21:53:52,131", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:18,160", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 301 0"}
+{"timestamp": "2025-11-11 21:54:18,475", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version (';*Ìñ·\x02¼Ì\x03TØG¸ë\x06\x93\x03,\x19Tª,ü2Y9B\x9fqb·rLÍK\x8axpÆ\x87,SC\x15ÊÐE£ås`ý\x15Q²\x96')"}
+{"timestamp": "2025-11-11 21:54:18,475", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:18,748", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03²')"}
+{"timestamp": "2025-11-11 21:54:18,748", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:18,795", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('}\x910¼k\x9d(\x87#\x19:¯aËuPVùÌ\x0eI\x00')"}
+{"timestamp": "2025-11-11 21:54:18,796", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:19,062", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x02\x01\x00\x00')"}
+{"timestamp": "2025-11-11 21:54:19,063", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:46,791", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')"}
+{"timestamp": "2025-11-11 21:54:46,792", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:47,050", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')"}
+{"timestamp": "2025-11-11 21:54:47,050", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:47,113", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00')"}
+{"timestamp": "2025-11-11 21:54:47,114", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:54:47,368", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x13\x8eÍ¦s·2}')"}
+{"timestamp": "2025-11-11 21:54:47,377", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:55:05,013", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('»ý²ùI³2W¬8óE\x06\x17[n\x9d\x16o\x1b\x19\x99Ò¬$Ü³Aq\x18\x9d\x8d\x96\x00')"}
+{"timestamp": "2025-11-11 21:55:05,013", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:55:05,017", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x19?:\x12\x07\x9a1Ü<â')"}
+{"timestamp": "2025-11-11 21:55:05,018", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:55:34,351", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 301 0"}
+{"timestamp": "2025-11-11 21:55:34,665", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00')"}
+{"timestamp": "2025-11-11 21:55:34,665", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:55:34,921", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x11UÕ@ÄØ²Äf')"}
+{"timestamp": "2025-11-11 21:55:34,922", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:55:34,983", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x9a\x9a\x00\x00\x00')"}
+{"timestamp": "2025-11-11 21:55:34,984", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:55:35,232", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x95ó')"}
+{"timestamp": "2025-11-11 21:55:35,232", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:57:05,042", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:57:05,091", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:57:05,480", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:57:05,563", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 21:57:11,632", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:57:12,091", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:57:13,457", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:57:27,002", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:58:15,229", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('Á~\xadü\x97û¸\x10\x8e:»ö×E}¼µ\x84lr{GoÑu\x8cd\x16½AÖ\x9bß\x8c]ÞÁjy¼Z2\x82O\x95\x8c')"}
+{"timestamp": "2025-11-11 21:58:15,231", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:58:15,243", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00')"}
+{"timestamp": "2025-11-11 21:58:15,244", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:58:18,891", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x05?\x9e§qT')"}
+{"timestamp": "2025-11-11 21:58:18,891", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:58:18,896", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('·\x10^ó¾ý4æµê\x98Èé÷\x07')"}
+{"timestamp": "2025-11-11 21:58:18,897", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:58:52,499", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 21:58:59,691", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')"}
+{"timestamp": "2025-11-11 21:58:59,693", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:58:59,696", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00')"}
+{"timestamp": "2025-11-11 21:58:59,706", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 21:59:39,971", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:04:09,983", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version (')¹E~hºzYd\x15l4±\x05P8j3ã±Ç\x16á%ÞÆÆ-¤ËpÐqÔè\x8eÄÌ\x84\x8b')"}
+{"timestamp": "2025-11-11 22:04:09,984", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:04:09,997", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('Ø\x95Øôènænhg\x01ÅAsð\x8d;EÍ£u¹±')"}
+{"timestamp": "2025-11-11 22:04:09,998", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:04:26,351", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x02\x01\x00\x00')"}
+{"timestamp": "2025-11-11 22:04:26,352", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:04:26,664", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x15\x1bªµ\x05\x96Í:ÒÃÂÀÄ¿t*')"}
+{"timestamp": "2025-11-11 22:04:26,664", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:04:26,765", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x9d')"}
+{"timestamp": "2025-11-11 22:04:26,766", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:04:27,145", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('localhost\x00')"}
+{"timestamp": "2025-11-11 22:04:27,145", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:05:08,647", "level": "ERROR", "module": "log", "message": "Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS."}
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+{"timestamp": "2025-11-11 22:05:08,833", "level": "WARNING", "module": "basehttp", "message": ""GET / HTTP/1.1" 400 143"}
+{"timestamp": "2025-11-11 22:05:09,062", "level": "ERROR", "module": "log", "message": "Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS."}
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+{"timestamp": "2025-11-11 22:05:09,064", "level": "WARNING", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 400 143"}
+{"timestamp": "2025-11-11 22:05:25,165", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x02\x01\x00\x00')"}
+{"timestamp": "2025-11-11 22:05:25,165", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:05:25,177", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x00')"}
+{"timestamp": "2025-11-11 22:05:25,177", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:06:11,366", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:06:53,895", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x89q\x96qìHÐ¸\x93{s4N')"}
+{"timestamp": "2025-11-11 22:06:53,895", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:06:53,898", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('d#Z\\Øpç\xad«éÏJ°\xadüÂG\xadLz¡\x0e\x8ej\x01HÅ¡')"}
+{"timestamp": "2025-11-11 22:06:53,898", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:06,865", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')"}
+{"timestamp": "2025-11-11 22:07:06,865", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:06,874", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03%òê2\x04ôøxÞzk\x89\x9bÆóoêJ:Ñ\x11hæñßÔîhVX·¹')"}
+{"timestamp": "2025-11-11 22:07:06,874", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:11,780", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request syntax ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03\x97\x92\x8c')"}
+{"timestamp": "2025-11-11 22:07:11,782", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:12,032", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('JJ\x00\x00\x00\x17\x00\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')"}
+{"timestamp": "2025-11-11 22:07:12,033", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:12,110", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('Ü*Ø-èã4')"}
+{"timestamp": "2025-11-11 22:07:12,111", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:12,345", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')"}
+{"timestamp": "2025-11-11 22:07:12,346", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:21,840", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')"}
+{"timestamp": "2025-11-11 22:07:21,841", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:22,088", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03\x01PÞ')"}
+{"timestamp": "2025-11-11 22:07:22,089", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:22,160", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x02h2\x08http/1.1\x00')"}
+{"timestamp": "2025-11-11 22:07:22,161", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:22,405", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥**\x00\x00\x00')"}
+{"timestamp": "2025-11-11 22:07:22,406", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:30,575", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x14\x93©8\x06\x89À~\x97\x9bI³R,yL\x9bkM86&Á\x03[\x9d\x94ó´¬Å3àé')"}
+{"timestamp": "2025-11-11 22:07:30,576", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:30,831", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x1a\x1a¾B')"}
+{"timestamp": "2025-11-11 22:07:30,832", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:30,891", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('U\x95_\x89U')"}
+{"timestamp": "2025-11-11 22:07:30,892", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:31,146", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('¿\x0e%')"}
+{"timestamp": "2025-11-11 22:07:31,147", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:46,074", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('Ùs\x92Âm%§\x93$<\x96}×+\x88d?\x04')"}
+{"timestamp": "2025-11-11 22:07:46,074", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:46,331", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Ezz\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À9\x16o©')"}
+{"timestamp": "2025-11-11 22:07:46,331", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:46,391", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('Y®\x00\x96Î\x7f©0\x07ÕÜÉZ2¾Åà4å\x8e\x10û\x8e\x98')"}
+{"timestamp": "2025-11-11 22:07:46,392", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:07:46,644", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('¦ð§\x1bá\x17V7r\x16\x97')"}
+{"timestamp": "2025-11-11 22:07:46,645", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:08:30,091", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:08:30,184", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:08:30,362", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:08:30,399", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:08:30,659", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:08:31,590", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:08:36,744", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:08:36,844", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:08:37,088", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:08:37,123", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:08:38,843", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:08:40,206", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:08:58,772", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x81köÞV8M¢G}Vç\x95')"}
+{"timestamp": "2025-11-11 22:08:58,773", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:08:58,779", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x0eØP\x06Ä¦')"}
+{"timestamp": "2025-11-11 22:08:58,788", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:09:01,381", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00þEÄ\x8abr7u\x9e4W\x02l\x12®\x83µÈ\x82Ì®ç6P\x07')"}
+{"timestamp": "2025-11-11 22:09:01,382", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:09:01,385", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s**\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')"}
+{"timestamp": "2025-11-11 22:09:01,385", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:09:57,961", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00\x00\x12\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00')"}
+{"timestamp": "2025-11-11 22:09:57,963", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:09:57,968", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('g\x8bü%¶')"}
+{"timestamp": "2025-11-11 22:09:57,968", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:10:09,338", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:10:19,087", "level": "ERROR", "module": "log", "message": "Internal Server Error: /"}
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2594, in get_connection
+    connection = self._available_connections.pop()
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\commands\core.py", line 1834, in get
+    return self.execute_command("GET", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2596, in get_connection
+    connection = self.make_connection()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2646, in make_connection
+    return self.connection_class(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 1255, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+{"timestamp": "2025-11-11 22:10:19,103", "level": "ERROR", "module": "basehttp", "message": ""GET / HTTP/1.1" 500 126936"}
+{"timestamp": "2025-11-11 22:10:19,805", "level": "ERROR", "module": "log", "message": "Internal Server Error: /favicon.ico"}
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2594, in get_connection
+    connection = self._available_connections.pop()
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\commands\core.py", line 1834, in get
+    return self.execute_command("GET", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2596, in get_connection
+    connection = self.make_connection()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2646, in make_connection
+    return self.connection_class(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 1255, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+{"timestamp": "2025-11-11 22:10:19,817", "level": "ERROR", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 500 126794"}
+{"timestamp": "2025-11-11 22:11:28,341", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:28,421", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:28,423", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:28,358", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:28,906", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:29,014", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:29,455", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading."}
+{"timestamp": "2025-11-11 22:11:35,588", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:11:35,636", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:11:36,072", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:11:36,480", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:11:36,839", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:11:36,990", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:11:37,309", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:12:10,106", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12051"}
+{"timestamp": "2025-11-11 22:12:10,600", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 200 18023"}
+{"timestamp": "2025-11-11 22:12:10,791", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 200 22181"}
+{"timestamp": "2025-11-11 22:12:11,440", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:12:11,850", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:12:12,113", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:12:35,454", "level": "WARNING", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 404 4912"}
+{"timestamp": "2025-11-11 22:13:02,605", "level": "WARNING", "module": "basehttp", "message": ""GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5023"}
+{"timestamp": "2025-11-11 22:14:20,954", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12051"}
+{"timestamp": "2025-11-11 22:14:21,091", "level": "WARNING", "module": "basehttp", "message": ""GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5023"}
+{"timestamp": "2025-11-11 22:14:21,154", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 200 18023"}
+{"timestamp": "2025-11-11 22:14:21,235", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 200 22181"}
+{"timestamp": "2025-11-11 22:14:21,335", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:14:21,453", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:14:21,933", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:14:35,331", "level": "WARNING", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 404 4912"}
+{"timestamp": "2025-11-11 22:14:59,299", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12051"}
+{"timestamp": "2025-11-11 22:14:59,614", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 200 18023"}
+{"timestamp": "2025-11-11 22:14:59,700", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 200 22181"}
+{"timestamp": "2025-11-11 22:15:00,058", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:15:00,400", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:15:06,181", "level": "WARNING", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 404 4912"}
+{"timestamp": "2025-11-11 22:17:11,704", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12124"}
+{"timestamp": "2025-11-11 22:17:11,873", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:17:12,198", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:17:12,276", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:17:20,511", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/login/ HTTP/1.1" 200 6817"}
+{"timestamp": "2025-11-11 22:17:20,586", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:17:20,651", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:17:27,745", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/login/ HTTP/1.1" 200 6817"}
+{"timestamp": "2025-11-11 22:17:27,839", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:17:27,882", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:19:52,457", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/register/ HTTP/1.1" 200 8755"}
+{"timestamp": "2025-11-11 22:19:52,595", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:19:52,766", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:27:01,245", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/register/ HTTP/1.1" 200 8755"}
+{"timestamp": "2025-11-11 22:27:01,319", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 304 0"}
+{"timestamp": "2025-11-11 22:27:01,398", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 304 0"}
+{"timestamp": "2025-11-11 22:27:01,424", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:27:01,444", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:37:32,973", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/login/ HTTP/1.1" 200 14327"}
+{"timestamp": "2025-11-11 22:37:33,047", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 304 0"}
+{"timestamp": "2025-11-11 22:37:33,112", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:37:33,158", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 304 0"}
+{"timestamp": "2025-11-11 22:37:33,182", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:37:33,248", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:37:51,340", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/register/ HTTP/1.1" 200 8755"}
+{"timestamp": "2025-11-11 22:37:51,423", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:37:51,468", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:39:47,714", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:39:47,967", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:39:48,213", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:39:48,734", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:39:48,872", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:39:48,757", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:39:49,270", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading."}
+{"timestamp": "2025-11-11 22:40:01,968", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:01,968", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:01,971", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:01,989", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:01,999", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:02,053", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:03,229", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:40:33,746", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/login/ HTTP/1.1" 200 14621"}
+{"timestamp": "2025-11-11 22:40:34,165", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 200 22181"}
+{"timestamp": "2025-11-11 22:40:34,278", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 200 18023"}
+{"timestamp": "2025-11-11 22:40:35,073", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:40:35,190", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:40:40,113", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:40:40,146", "level": "WARNING", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 404 4912"}
+{"timestamp": "2025-11-11 22:41:02,070", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:41:02,104", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:42:46,143", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/register/ HTTP/1.1" 200 15784"}
+{"timestamp": "2025-11-11 22:42:46,222", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:42:46,278", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:43:55,713", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:43:55,800", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:43:55,776", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:43:55,843", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:43:56,101", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:43:56,531", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:43:56,532", "level": "INFO", "module": "autoreload", "message": "C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading."}
+{"timestamp": "2025-11-11 22:44:04,432", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:04,476", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:04,998", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:05,191", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:05,265", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:05,359", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:05,452", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-11 22:44:33,657", "level": "INFO", "module": "basehttp", "message": ""GET /accounts/register/ HTTP/1.1" 200 15826"}
+{"timestamp": "2025-11-11 22:44:33,744", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:44:33,783", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:44:46,731", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12124"}
+{"timestamp": "2025-11-11 22:44:46,960", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:44:47,184", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:45:11,908", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')"}
+{"timestamp": "2025-11-11 22:45:11,909", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:11,911", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version (':iêÇeÛ\x89\x97»ú!×\x19f\x12´\x9b\x9d%ÆbHy@¤\x19\x87F\x13íX')"}
+{"timestamp": "2025-11-11 22:45:11,912", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:18,962", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('-öa\xadU\x97U¸«8\x89\x07êà·O#fdÅ01ö©ÙÓ]²à\x98:á-Ù\x12q¹%.eû%ª7¤Q·>UÖnúÔ_?[\x1b¬¡')"}
+{"timestamp": "2025-11-11 22:45:18,962", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:19,205", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ØÎ++¶I\x15')"}
+{"timestamp": "2025-11-11 22:45:19,206", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:19,279", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('þq²5²¤Ï\\¾=·¸')"}
+{"timestamp": "2025-11-11 22:45:19,280", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:19,547", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ö`å\x81ÜM-¦\x17JF\x98¢\x8a?ó´')"}
+{"timestamp": "2025-11-11 22:45:19,548", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:22,964", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('O\x06²F®á-C[·CÙ\x08m2')"}
+{"timestamp": "2025-11-11 22:45:22,964", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:45:23,032", "level": "INFO", "module": "basehttp", "message": "code 400, message Bad request version ('ÇF÷I¯')"}
+{"timestamp": "2025-11-11 22:45:23,040", "level": "ERROR", "module": "basehttp", "message": "You're accessing the development server over HTTPS, but it only supports HTTP."}
+{"timestamp": "2025-11-11 22:52:39,012", "level": "ERROR", "module": "log", "message": "Internal Server Error: /"}
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static', expected 'endblock'. Did you forget to register or load this tag?
+{"timestamp": "2025-11-11 22:52:39,032", "level": "ERROR", "module": "basehttp", "message": ""GET / HTTP/1.1" 500 196505"}
+{"timestamp": "2025-11-11 22:53:51,379", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12267"}
+{"timestamp": "2025-11-11 22:53:51,511", "level": "INFO", "module": "basehttp", "message": ""GET /static/css/style.css HTTP/1.1" 304 0"}
+{"timestamp": "2025-11-11 22:53:51,525", "level": "INFO", "module": "basehttp", "message": ""GET /static/js/script.js HTTP/1.1" 304 0"}
+{"timestamp": "2025-11-11 22:53:51,797", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:53:51,901", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 22:53:51,914", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:53:52,060", "level": "INFO", "module": "basehttp", "message": ""GET /static/images/header.png HTTP/1.1" 200 220509"}
+{"timestamp": "2025-11-11 22:58:52,115", "level": "INFO", "module": "basehttp", "message": ""GET / HTTP/1.1" 200 12268"}
+{"timestamp": "2025-11-11 22:58:52,316", "level": "INFO", "module": "basehttp", "message": ""GET /static/images/header.jpeg HTTP/1.1" 200 24015"}
+{"timestamp": "2025-11-11 22:58:52,371", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002"}
+{"timestamp": "2025-11-11 22:58:52,742", "level": "WARNING", "module": "basehttp", "message": ""GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999"}
+{"timestamp": "2025-11-11 23:00:24,883", "level": "ERROR", "module": "log", "message": "Internal Server Error: /products/"}
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'intcomma'
+{"timestamp": "2025-11-11 23:00:24,898", "level": "ERROR", "module": "basehttp", "message": ""GET /products/ HTTP/1.1" 500 362655"}

@@ -37,6 +37,8 @@ class LocationData(models.Model):
         indexes = [
             models.Index(fields=['device', '-timestamp']),
             models.Index(fields=['latitude', 'longitude']),
+            models.Index(fields=['timestamp']),
+            models.Index(fields=['device', 'timestamp']),
         ]
 
 
@@ -180,4 +182,6 @@ class Alert(models.Model):
         indexes = [
             models.Index(fields=['device', '-created_at']),
             models.Index(fields=['is_read', 'is_resolved']),
+            models.Index(fields=['alert_type']),
+            models.Index(fields=['severity']),
         ]

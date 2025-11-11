@@ -1,0 +1,569 @@
+INFO 2025-11-11 21:47:04,977 autoreload 14948 4616 Watching for file changes with StatReloader
+
+INFO 2025-11-11 21:47:12,973 autoreload 12464 18148 Watching for file changes with StatReloader
+INFO 2025-11-11 21:47:45,974 autoreload 14948 4616 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:47:46,067 autoreload 13616 16956 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:47:46,103 autoreload 12464 18148 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:47:52,647 autoreload 4612 17032 Watching for file changes with StatReloader
+INFO 2025-11-11 21:47:52,680 autoreload 15632 12776 Watching for file changes with StatReloader
+INFO 2025-11-11 21:47:52,776 autoreload 1656 5420 Watching for file changes with StatReloader
+INFO 2025-11-11 21:48:14,969 basehttp 4612 17084 "GET / HTTP/1.1" 301 0
+INFO 2025-11-11 21:48:15,005 basehttp 4612 5884 code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04Àê´Ê3"6ÄU7{[¨3Ì\x8c\x7f\x14²b¨¥¿Ú\x8bÇ')
+ERROR 2025-11-11 21:48:15,005 basehttp 4612 5884 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:48:15,030 basehttp 4612 16468 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00')
+ERROR 2025-11-11 21:48:15,031 basehttp 4612 16468 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:48:26,516 autoreload 12108 11620 Watching for file changes with StatReloader
+INFO 2025-11-11 21:48:33,978 basehttp 4612 16656 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sªª\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04À*É=vGÍ)\x82\x03?{\x93\x91Òh\x9aX\x17LË¯\x84aV¬q\x80x\x01\x89\x12Q\x84ú\x99~-áe»\x8c')
+ERROR 2025-11-11 21:48:33,979 basehttp 4612 16656 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:48:33,993 basehttp 4612 2464 code 400, message Bad request version ('\x00ú\x00\x00\x01\x00\x01')
+ERROR 2025-11-11 21:48:33,993 basehttp 4612 2464 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:50:11,008 basehttp 4612 14044 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x12»CVô¡øvgðy')
+ERROR 2025-11-11 21:50:11,008 basehttp 4612 14044 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:50:11,011 basehttp 4612 14592 code 400, message Bad request version ('\x11Aÿ\x1a\x0fPPrÍ\x03')
+ERROR 2025-11-11 21:50:11,012 basehttp 4612 14592 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:50:19,509 autoreload 2556 17268 Watching for file changes with StatReloader
+INFO 2025-11-11 21:50:26,024 basehttp 4612 8260 code 400, message Bad request version ("\x17ºÐ'â§Ë\x81\x10u\x05ZO\x16úyL*|k\x97B\x7fì")
+ERROR 2025-11-11 21:50:26,025 basehttp 4612 8260 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:50:26,038 basehttp 4612 2844 code 400, message Bad request version ('àMSQ\x04t\x03|MLn*\x9aU\x92wm2\x13\x00')
+ERROR 2025-11-11 21:50:26,039 basehttp 4612 2844 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:53:38,018 basehttp 4612 17908 code 400, message Bad request version ('Lökã±\x86<¼°ýå\x86ÌÅO:Ô6_µ¾4\x1afmCwPÅ¬Ê')
+ERROR 2025-11-11 21:53:38,018 basehttp 4612 17908 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:53:38,046 basehttp 4612 6016 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00')
+ERROR 2025-11-11 21:53:38,046 basehttp 4612 6016 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:53:44,261 basehttp 4612 14708 code 400, message Bad request version ("ÙF\x86#\x89h´j¦ÞªSq©©³É¾%\x18&\x94\x94°'I")
+ERROR 2025-11-11 21:53:44,262 basehttp 4612 14708 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:53:44,264 basehttp 4612 18072 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Súú\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-11-11 21:53:44,265 basehttp 4612 18072 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:53:52,127 basehttp 4612 1892 code 400, message Bad request version ('ë7ÈÙ\x13\x98^}þ·\x00')
+ERROR 2025-11-11 21:53:52,128 basehttp 4612 1892 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:53:52,130 basehttp 4612 7096 code 400, message Bad request version ('\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-11-11 21:53:52,131 basehttp 4612 7096 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:18,160 basehttp 4612 11492 "GET / HTTP/1.1" 301 0
+INFO 2025-11-11 21:54:18,475 basehttp 4612 5796 code 400, message Bad request version (';*Ìñ·\x02¼Ì\x03TØG¸ë\x06\x93\x03,\x19Tª,ü2Y9B\x9fqb·rLÍK\x8axpÆ\x87,SC\x15ÊÐE£ås`ý\x15Q²\x96')
+ERROR 2025-11-11 21:54:18,475 basehttp 4612 5796 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:18,748 basehttp 4612 14532 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03²')
+ERROR 2025-11-11 21:54:18,748 basehttp 4612 14532 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:18,795 basehttp 4612 17836 code 400, message Bad request version ('}\x910¼k\x9d(\x87#\x19:¯aËuPVùÌ\x0eI\x00')
+ERROR 2025-11-11 21:54:18,796 basehttp 4612 17836 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:19,062 basehttp 4612 17084 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-11-11 21:54:19,063 basehttp 4612 17084 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:46,791 basehttp 4612 12956 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-11 21:54:46,792 basehttp 4612 12956 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:47,050 basehttp 4612 17500 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06E')
+ERROR 2025-11-11 21:54:47,050 basehttp 4612 17500 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:47,113 basehttp 4612 14732 code 400, message Bad request version ('\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00')
+ERROR 2025-11-11 21:54:47,114 basehttp 4612 14732 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:54:47,368 basehttp 4612 18340 code 400, message Bad request version ('\x13\x8eÍ¦s·2}')
+ERROR 2025-11-11 21:54:47,377 basehttp 4612 18340 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:55:05,013 basehttp 4612 15056 code 400, message Bad request version ('»ý²ùI³2W¬8óE\x06\x17[n\x9d\x16o\x1b\x19\x99Ò¬$Ü³Aq\x18\x9d\x8d\x96\x00')
+ERROR 2025-11-11 21:55:05,013 basehttp 4612 15056 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:55:05,017 basehttp 4612 1100 code 400, message Bad request version ('\x19?:\x12\x07\x9a1Ü<â')
+ERROR 2025-11-11 21:55:05,018 basehttp 4612 1100 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:55:34,351 basehttp 4612 384 "GET / HTTP/1.1" 301 0
+INFO 2025-11-11 21:55:34,665 basehttp 4612 18428 code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-11-11 21:55:34,665 basehttp 4612 18428 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:55:34,921 basehttp 4612 18100 code 400, message Bad request version ('\x11UÕ@ÄØ²Äf')
+ERROR 2025-11-11 21:55:34,922 basehttp 4612 18100 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:55:34,983 basehttp 4612 13396 code 400, message Bad request version ('\x9a\x9a\x00\x00\x00')
+ERROR 2025-11-11 21:55:34,984 basehttp 4612 13396 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:55:35,232 basehttp 4612 18412 code 400, message Bad request version ('\x95ó')
+ERROR 2025-11-11 21:55:35,232 basehttp 4612 18412 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:57:05,042 autoreload 1656 5420 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:57:05,091 autoreload 4612 17032 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:57:05,480 autoreload 15632 12776 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:57:05,563 autoreload 2556 17268 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 21:57:11,632 autoreload 6364 15784 Watching for file changes with StatReloader
+INFO 2025-11-11 21:57:11,632 autoreload 16556 2576 Watching for file changes with StatReloader
+INFO 2025-11-11 21:57:12,091 autoreload 3752 13460 Watching for file changes with StatReloader
+INFO 2025-11-11 21:57:13,457 autoreload 11512 2204 Watching for file changes with StatReloader
+INFO 2025-11-11 21:57:27,002 autoreload 7488 17948 Watching for file changes with StatReloader
+INFO 2025-11-11 21:58:15,229 basehttp 16556 13768 code 400, message Bad request version ('Á~\xadü\x97û¸\x10\x8e:»ö×E}¼µ\x84lr{GoÑu\x8cd\x16½AÖ\x9bß\x8c]ÞÁjy¼Z2\x82O\x95\x8c')
+ERROR 2025-11-11 21:58:15,231 basehttp 16556 13768 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:58:15,243 basehttp 16556 18280 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-11-11 21:58:15,244 basehttp 16556 18280 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:58:18,891 basehttp 16556 9976 code 400, message Bad request version ('\x05?\x9e§qT')
+ERROR 2025-11-11 21:58:18,891 basehttp 16556 9976 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:58:18,896 basehttp 16556 2312 code 400, message Bad request version ('·\x10^ó¾ý4æµê\x98Èé÷\x07')
+ERROR 2025-11-11 21:58:18,897 basehttp 16556 2312 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:58:52,499 autoreload 17520 9288 Watching for file changes with StatReloader
+INFO 2025-11-11 21:58:59,691 basehttp 16556 15952 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+ERROR 2025-11-11 21:58:59,693 basehttp 16556 15952 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:58:59,696 basehttp 16556 12272 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-11 21:58:59,706 basehttp 16556 12272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 21:59:39,971 autoreload 16016 2452 Watching for file changes with StatReloader
+INFO 2025-11-11 22:04:09,983 basehttp 16556 18272 code 400, message Bad request version (')¹E~hºzYd\x15l4±\x05P8j3ã±Ç\x16á%ÞÆÆ-¤ËpÐqÔè\x8eÄÌ\x84\x8b')
+ERROR 2025-11-11 22:04:09,984 basehttp 16556 18272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:04:09,997 basehttp 16556 6288 code 400, message Bad request version ('Ø\x95Øôènænhg\x01ÅAsð\x8d;EÍ£u¹±')
+ERROR 2025-11-11 22:04:09,998 basehttp 16556 6288 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:04:26,351 basehttp 16556 16916 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-11-11 22:04:26,352 basehttp 16556 16916 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:04:26,664 basehttp 16556 7604 code 400, message Bad request version ('\x15\x1bªµ\x05\x96Í:ÒÃÂÀÄ¿t*')
+ERROR 2025-11-11 22:04:26,664 basehttp 16556 7604 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:04:26,765 basehttp 16556 1424 code 400, message Bad request version ('\x9d')
+ERROR 2025-11-11 22:04:26,766 basehttp 16556 1424 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:04:27,145 basehttp 16556 17820 code 400, message Bad request version ('localhost\x00')
+ERROR 2025-11-11 22:04:27,145 basehttp 16556 17820 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-11-11 22:05:08,833 basehttp 16556 14764 "GET / HTTP/1.1" 400 143
+WARNING 2025-11-11 22:05:09,064 basehttp 16556 15256 "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2025-11-11 22:05:25,165 basehttp 16556 1828 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-11-11 22:05:25,165 basehttp 16556 1828 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:05:25,177 basehttp 16556 15644 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-11-11 22:05:25,177 basehttp 16556 15644 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:06:11,366 autoreload 14460 16800 Watching for file changes with StatReloader
+INFO 2025-11-11 22:06:53,895 basehttp 16556 15796 code 400, message Bad request version ('\x89q\x96qìHÐ¸\x93{s4N')
+ERROR 2025-11-11 22:06:53,895 basehttp 16556 15796 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:06:53,898 basehttp 16556 6028 code 400, message Bad request version ('d#Z\\Øpç\xad«éÏJ°\xadüÂG\xadLz¡\x0e\x8ej\x01HÅ¡')
+ERROR 2025-11-11 22:06:53,898 basehttp 16556 6028 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:06,865 basehttp 16556 11824 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063')
+ERROR 2025-11-11 22:07:06,865 basehttp 16556 11824 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:06,874 basehttp 16556 14692 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03%òê2\x04ôøxÞzk\x89\x9bÆóoêJ:Ñ\x11hæñßÔîhVX·¹')
+ERROR 2025-11-11 22:07:06,874 basehttp 16556 14692 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:11,780 basehttp 16556 5628 code 400, message Bad request syntax ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03\x97\x92\x8c')
+ERROR 2025-11-11 22:07:11,782 basehttp 16556 5628 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:12,032 basehttp 16556 17176 code 400, message Bad request version ('JJ\x00\x00\x00\x17\x00\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-11-11 22:07:12,033 basehttp 16556 17176 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:12,110 basehttp 16556 9912 code 400, message Bad request version ('Ü*Ø-èã4')
+ERROR 2025-11-11 22:07:12,111 basehttp 16556 9912 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:12,345 basehttp 16556 17900 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-11 22:07:12,346 basehttp 16556 17900 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:21,840 basehttp 16556 4228 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-11 22:07:21,841 basehttp 16556 4228 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:22,088 basehttp 16556 8428 code 400, message Bad request syntax ('\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03\x01PÞ')
+ERROR 2025-11-11 22:07:22,089 basehttp 16556 8428 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:22,160 basehttp 16556 18044 code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+ERROR 2025-11-11 22:07:22,161 basehttp 16556 18044 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:22,405 basehttp 16556 13732 code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥**\x00\x00\x00')
+ERROR 2025-11-11 22:07:22,406 basehttp 16556 13732 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:30,575 basehttp 16556 232 code 400, message Bad request version ('\x14\x93©8\x06\x89À~\x97\x9bI³R,yL\x9bkM86&Á\x03[\x9d\x94ó´¬Å3àé')
+ERROR 2025-11-11 22:07:30,576 basehttp 16556 232 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:30,831 basehttp 16556 18108 code 400, message Bad request version ('\x1a\x1a¾B')
+ERROR 2025-11-11 22:07:30,832 basehttp 16556 18108 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:30,891 basehttp 16556 1016 code 400, message Bad request version ('U\x95_\x89U')
+ERROR 2025-11-11 22:07:30,892 basehttp 16556 1016 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:31,146 basehttp 16556 16644 code 400, message Bad request version ('¿\x0e%')
+ERROR 2025-11-11 22:07:31,147 basehttp 16556 16644 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:46,074 basehttp 16556 8844 code 400, message Bad request version ('Ùs\x92Âm%§\x93$<\x96}×+\x88d?\x04')
+ERROR 2025-11-11 22:07:46,074 basehttp 16556 8844 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:46,331 basehttp 16556 16404 code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Ezz\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À9\x16o©')
+ERROR 2025-11-11 22:07:46,331 basehttp 16556 16404 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:46,391 basehttp 16556 15156 code 400, message Bad request version ('Y®\x00\x96Î\x7f©0\x07ÕÜÉZ2¾Åà4å\x8e\x10û\x8e\x98')
+ERROR 2025-11-11 22:07:46,392 basehttp 16556 15156 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:07:46,644 basehttp 16556 15748 code 400, message Bad request version ('¦ð§\x1bá\x17V7r\x16\x97')
+ERROR 2025-11-11 22:07:46,645 basehttp 16556 15748 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:08:30,091 autoreload 7488 17948 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:08:30,184 autoreload 14460 16800 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:08:30,362 autoreload 6364 15784 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:08:30,399 autoreload 16556 2576 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:08:30,659 autoreload 3752 13460 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:08:31,590 autoreload 16016 2452 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:08:36,744 autoreload 17004 4888 Watching for file changes with StatReloader
+INFO 2025-11-11 22:08:36,844 autoreload 15144 16164 Watching for file changes with StatReloader
+INFO 2025-11-11 22:08:37,088 autoreload 17964 1680 Watching for file changes with StatReloader
+INFO 2025-11-11 22:08:37,123 autoreload 14880 2500 Watching for file changes with StatReloader
+INFO 2025-11-11 22:08:38,843 autoreload 8040 8952 Watching for file changes with StatReloader
+INFO 2025-11-11 22:08:40,206 autoreload 232 10964 Watching for file changes with StatReloader
+INFO 2025-11-11 22:08:58,772 basehttp 15144 12732 code 400, message Bad request version ('\x81köÞV8M¢G}Vç\x95')
+ERROR 2025-11-11 22:08:58,773 basehttp 15144 12732 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:08:58,779 basehttp 15144 16684 code 400, message Bad request version ('\x0eØP\x06Ä¦')
+ERROR 2025-11-11 22:08:58,788 basehttp 15144 16684 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:09:01,381 basehttp 15144 9516 code 400, message Bad request version ('\x00þEÄ\x8abr7u\x9e4W\x02l\x12®\x83µÈ\x82Ì®ç6P\x07')
+ERROR 2025-11-11 22:09:01,382 basehttp 15144 9516 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:09:01,385 basehttp 15144 14368 code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s**\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-11-11 22:09:01,385 basehttp 15144 14368 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:09:57,961 basehttp 15144 16132 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00\x00\x12\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-11-11 22:09:57,963 basehttp 15144 16132 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:09:57,968 basehttp 15144 3628 code 400, message Bad request version ('g\x8bü%¶')
+ERROR 2025-11-11 22:09:57,968 basehttp 15144 3628 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:10:09,338 autoreload 11620 9624 Watching for file changes with StatReloader
+ERROR 2025-11-11 22:10:19,087 log 15144 16484 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2594, in get_connection
+    connection = self._available_connections.pop()
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\commands\core.py", line 1834, in get
+    return self.execute_command("GET", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2596, in get_connection
+    connection = self.make_connection()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2646, in make_connection
+    return self.connection_class(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 1255, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-11-11 22:10:19,103 basehttp 15144 16484 "GET / HTTP/1.1" 500 126936
+ERROR 2025-11-11 22:10:19,805 log 15144 16484 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2594, in get_connection
+    connection = self._available_connections.pop()
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\commands\core.py", line 1834, in get
+    return self.execute_command("GET", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2596, in get_connection
+    connection = self.make_connection()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 2646, in make_connection
+    return self.connection_class(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\redis\connection.py", line 1255, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-11-11 22:10:19,817 basehttp 15144 16484 "GET /favicon.ico HTTP/1.1" 500 126794
+INFO 2025-11-11 22:11:28,341 autoreload 8040 8952 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:28,421 autoreload 17004 4888 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:28,423 autoreload 15144 16164 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:28,358 autoreload 11620 9624 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:28,906 autoreload 17964 1680 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:29,014 autoreload 14880 2500 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:29,455 autoreload 232 10964 C:\Users\iraj\Desktop\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-11 22:11:35,588 autoreload 6572 6880 Watching for file changes with StatReloader
+INFO 2025-11-11 22:11:35,636 autoreload 16592 5884 Watching for file changes with StatReloader
+INFO 2025-11-11 22:11:36,072 autoreload 7776 18164 Watching for file changes with StatReloader
+INFO 2025-11-11 22:11:36,480 autoreload 4040 9556 Watching for file changes with StatReloader
+INFO 2025-11-11 22:11:36,839 autoreload 15764 13716 Watching for file changes with StatReloader
+INFO 2025-11-11 22:11:36,990 autoreload 14280 10716 Watching for file changes with StatReloader
+INFO 2025-11-11 22:11:37,309 autoreload 7552 16248 Watching for file changes with StatReloader
+INFO 2025-11-11 22:12:10,106 basehttp 16592 2880 "GET / HTTP/1.1" 200 12051
+INFO 2025-11-11 22:12:10,600 basehttp 16592 2880 "GET /static/css/style.css HTTP/1.1" 200 18023
+INFO 2025-11-11 22:12:10,791 basehttp 16592 1764 "GET /static/js/script.js HTTP/1.1" 200 22181
+WARNING 2025-11-11 22:12:11,440 basehttp 16592 1764 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:12:11,850 basehttp 16592 2880 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+WARNING 2025-11-11 22:12:12,113 basehttp 16592 1904 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:12:35,454 basehttp 16592 16664 "GET /favicon.ico HTTP/1.1" 404 4912
+WARNING 2025-11-11 22:13:02,605 basehttp 16592 15760 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5023
+INFO 2025-11-11 22:14:20,954 basehttp 16592 5276 "GET / HTTP/1.1" 200 12051
+WARNING 2025-11-11 22:14:21,091 basehttp 16592 5276 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5023
+INFO 2025-11-11 22:14:21,154 basehttp 16592 13656 "GET /static/css/style.css HTTP/1.1" 200 18023
+INFO 2025-11-11 22:14:21,235 basehttp 16592 10604 "GET /static/js/script.js HTTP/1.1" 200 22181
+WARNING 2025-11-11 22:14:21,335 basehttp 16592 10604 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:14:21,453 basehttp 16592 13656 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+WARNING 2025-11-11 22:14:21,933 basehttp 16592 5276 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:14:35,331 basehttp 16592 10188 "GET /favicon.ico HTTP/1.1" 404 4912
+INFO 2025-11-11 22:14:59,299 basehttp 16592 10188 "GET / HTTP/1.1" 200 12051
+INFO 2025-11-11 22:14:59,614 basehttp 16592 10188 "GET /static/css/style.css HTTP/1.1" 200 18023
+INFO 2025-11-11 22:14:59,700 basehttp 16592 10188 "GET /static/js/script.js HTTP/1.1" 200 22181
+WARNING 2025-11-11 22:15:00,058 basehttp 16592 10188 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:15:00,400 basehttp 16592 15384 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+WARNING 2025-11-11 22:15:06,181 basehttp 16592 7324 "GET /favicon.ico HTTP/1.1" 404 4912
+INFO 2025-11-11 22:17:11,704 basehttp 16592 7324 "GET / HTTP/1.1" 200 12124
+WARNING 2025-11-11 22:17:11,873 basehttp 16592 7324 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:17:12,198 basehttp 16592 2156 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:17:12,276 basehttp 16592 5580 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:17:20,511 basehttp 16592 18080 "GET /accounts/login/ HTTP/1.1" 200 6817
+WARNING 2025-11-11 22:17:20,586 basehttp 16592 18080 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:17:20,651 basehttp 16592 11992 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:17:27,745 basehttp 16592 11852 "GET /accounts/login/ HTTP/1.1" 200 6817
+WARNING 2025-11-11 22:17:27,839 basehttp 16592 11852 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:17:27,882 basehttp 16592 9976 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:19:52,457 basehttp 16592 17628 "GET /accounts/register/ HTTP/1.1" 200 8755
+WARNING 2025-11-11 22:19:52,595 basehttp 16592 17628 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:19:52,766 basehttp 16592 16708 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:27:01,245 basehttp 16592 12956 "GET /accounts/register/ HTTP/1.1" 200 8755
+INFO 2025-11-11 22:27:01,319 basehttp 16592 12956 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-11-11 22:27:01,398 basehttp 16592 5380 "GET /static/js/script.js HTTP/1.1" 304 0
+WARNING 2025-11-11 22:27:01,424 basehttp 16592 5380 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:27:01,444 basehttp 16592 12956 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:37:32,973 basehttp 16592 14804 "GET /accounts/login/ HTTP/1.1" 200 14327
+INFO 2025-11-11 22:37:33,047 basehttp 16592 14804 "GET /static/css/style.css HTTP/1.1" 304 0
+WARNING 2025-11-11 22:37:33,112 basehttp 16592 14804 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+INFO 2025-11-11 22:37:33,158 basehttp 16592 15984 "GET /static/js/script.js HTTP/1.1" 304 0
+WARNING 2025-11-11 22:37:33,182 basehttp 16592 15984 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:37:33,248 basehttp 16592 7588 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:37:51,340 basehttp 16592 12776 "GET /accounts/register/ HTTP/1.1" 200 8755
+WARNING 2025-11-11 22:37:51,423 basehttp 16592 12776 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:37:51,468 basehttp 16592 9712 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:39:47,714 autoreload 6572 6880 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:39:47,967 autoreload 14280 10716 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:39:48,213 autoreload 4040 9556 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:39:48,734 autoreload 7776 18164 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:39:48,872 autoreload 16592 5884 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:39:48,757 autoreload 15764 13716 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:39:49,270 autoreload 7552 16248 C:\Users\iraj\Desktop\GpsStore\apps\accounts\views.py changed, reloading.
+INFO 2025-11-11 22:40:01,968 autoreload 13016 15760 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:01,968 autoreload 10940 18240 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:01,971 autoreload 14908 9624 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:01,989 autoreload 4928 9504 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:01,999 autoreload 13576 9492 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:02,053 autoreload 15284 18036 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:03,229 autoreload 2448 16748 Watching for file changes with StatReloader
+INFO 2025-11-11 22:40:33,746 basehttp 13576 5964 "GET /accounts/login/ HTTP/1.1" 200 14621
+INFO 2025-11-11 22:40:34,165 basehttp 13576 2316 "GET /static/js/script.js HTTP/1.1" 200 22181
+INFO 2025-11-11 22:40:34,278 basehttp 13576 5964 "GET /static/css/style.css HTTP/1.1" 200 18023
+WARNING 2025-11-11 22:40:35,073 basehttp 13576 5964 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:40:35,190 basehttp 13576 2316 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+WARNING 2025-11-11 22:40:40,113 basehttp 13576 16628 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:40:40,146 basehttp 13576 16840 "GET /favicon.ico HTTP/1.1" 404 4912
+WARNING 2025-11-11 22:41:02,070 basehttp 13576 3068 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:41:02,104 basehttp 13576 5152 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:42:46,143 basehttp 13576 2336 "GET /accounts/register/ HTTP/1.1" 200 15784
+WARNING 2025-11-11 22:42:46,222 basehttp 13576 2336 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:42:46,278 basehttp 13576 17904 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:43:55,713 autoreload 10940 18240 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:43:55,800 autoreload 13576 9492 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:43:55,776 autoreload 2448 16748 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:43:55,843 autoreload 13016 15760 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:43:56,101 autoreload 4928 9504 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:43:56,531 autoreload 14908 9624 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:43:56,532 autoreload 15284 18036 C:\Users\iraj\Desktop\GpsStore\apps\accounts\forms.py changed, reloading.
+INFO 2025-11-11 22:44:04,432 autoreload 18016 15472 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:04,476 autoreload 9448 7088 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:04,998 autoreload 15952 17112 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:05,191 autoreload 15440 14120 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:05,265 autoreload 14712 16484 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:05,359 autoreload 1924 15972 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:05,452 autoreload 8516 16664 Watching for file changes with StatReloader
+INFO 2025-11-11 22:44:33,657 basehttp 18016 8096 "GET /accounts/register/ HTTP/1.1" 200 15826
+WARNING 2025-11-11 22:44:33,744 basehttp 18016 8096 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:44:33,783 basehttp 18016 10216 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:44:46,731 basehttp 18016 16416 "GET / HTTP/1.1" 200 12124
+WARNING 2025-11-11 22:44:46,960 basehttp 18016 16416 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:44:47,184 basehttp 18016 5816 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+INFO 2025-11-11 22:45:11,908 basehttp 18016 8484 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+ERROR 2025-11-11 22:45:11,909 basehttp 18016 8484 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:11,911 basehttp 18016 16028 code 400, message Bad request version (':iêÇeÛ\x89\x97»ú!×\x19f\x12´\x9b\x9d%ÆbHy@¤\x19\x87F\x13íX')
+ERROR 2025-11-11 22:45:11,912 basehttp 18016 16028 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:18,962 basehttp 18016 5276 code 400, message Bad request version ('-öa\xadU\x97U¸«8\x89\x07êà·O#fdÅ01ö©ÙÓ]²à\x98:á-Ù\x12q¹%.eû%ª7¤Q·>UÖnúÔ_?[\x1b¬¡')
+ERROR 2025-11-11 22:45:18,962 basehttp 18016 5276 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:19,205 basehttp 18016 17816 code 400, message Bad request version ('ØÎ++¶I\x15')
+ERROR 2025-11-11 22:45:19,206 basehttp 18016 17816 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:19,279 basehttp 18016 17228 code 400, message Bad request version ('þq²5²¤Ï\\¾=·¸')
+ERROR 2025-11-11 22:45:19,280 basehttp 18016 17228 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:19,547 basehttp 18016 3792 code 400, message Bad request version ('ö`å\x81ÜM-¦\x17JF\x98¢\x8a?ó´')
+ERROR 2025-11-11 22:45:19,548 basehttp 18016 3792 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:22,964 basehttp 18016 10676 code 400, message Bad request version ('O\x06²F®á-C[·CÙ\x08m2')
+ERROR 2025-11-11 22:45:22,964 basehttp 18016 10676 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-11-11 22:45:23,032 basehttp 18016 10428 code 400, message Bad request version ('ÇF÷I¯')
+ERROR 2025-11-11 22:45:23,040 basehttp 18016 10428 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-11-11 22:52:39,012 log 18016 9280 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2025-11-11 22:52:39,032 basehttp 18016 9280 "GET / HTTP/1.1" 500 196505
+INFO 2025-11-11 22:53:51,379 basehttp 18016 3068 "GET / HTTP/1.1" 200 12267
+INFO 2025-11-11 22:53:51,511 basehttp 18016 3068 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-11-11 22:53:51,525 basehttp 18016 15252 "GET /static/js/script.js HTTP/1.1" 304 0
+WARNING 2025-11-11 22:53:51,797 basehttp 18016 3068 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:53:51,901 basehttp 18016 7508 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+WARNING 2025-11-11 22:53:51,914 basehttp 18016 17972 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+INFO 2025-11-11 22:53:52,060 basehttp 18016 15252 "GET /static/images/header.png HTTP/1.1" 200 220509
+INFO 2025-11-11 22:58:52,115 basehttp 18016 15260 "GET / HTTP/1.1" 200 12268
+INFO 2025-11-11 22:58:52,316 basehttp 18016 15260 "GET /static/images/header.jpeg HTTP/1.1" 200 24015
+WARNING 2025-11-11 22:58:52,371 basehttp 18016 15260 "GET /static/fonts/Vazir-Regular.woff2 HTTP/1.1" 404 2002
+WARNING 2025-11-11 22:58:52,742 basehttp 18016 9392 "GET /static/fonts/Vazir-Regular.woff HTTP/1.1" 404 1999
+ERROR 2025-11-11 23:00:24,883 log 18016 15524 Internal Server Error: /products/
+Traceback (most recent call last):
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\iraj\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'intcomma'
+ERROR 2025-11-11 23:00:24,898 basehttp 18016 15524 "GET /products/ HTTP/1.1" 500 362655

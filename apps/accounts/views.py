@@ -33,6 +33,11 @@ class LoginView(TemplateView):
     """
     template_name = 'accounts/login.html'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = UserLoginForm()
+        return context
+
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             return redirect('accounts:dashboard')
@@ -86,6 +91,12 @@ class DashboardView(LoginRequiredMixin, TemplateView):
 
         # GPS devices
         context['gps_devices'] = user.gps_devices.filter(status='active')[:5]
+
+        # Statistics
+        context['total_orders'] = user.orders.count()
+        context['total_devices'] = user.gps_devices.count()
+        context['active_devices'] = user.gps_devices.filter(status='active').count()
+        context['pending_orders'] = user.orders.filter(status='pending').count()
 
         return context
 

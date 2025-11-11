@@ -21,8 +21,7 @@ class UserRegistrationForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field_name in self.fields:
-            if field_name not in ['password1', 'password2']:
-                self.fields[field_name].widget.attrs.update({'class': 'form-control'})
+            self.fields[field_name].widget.attrs.update({'class': 'form-control'})
 
     def save(self, commit=True):
         user = super().save(commit=False)
@@ -31,10 +30,10 @@ class UserRegistrationForm(UserCreationForm):
         user.last_name = self.cleaned_data['last_name']
         if commit:
             user.save()
-            # Create profile with phone number
-            UserProfile.objects.create(
+            # Create profile with phone number (only if it doesn't exist)
+            UserProfile.objects.get_or_create(
                 user=user,
-                phone_number=self.cleaned_data['phone_number']
+                defaults={'phone_number': self.cleaned_data['phone_number']}
             )
         return user
 

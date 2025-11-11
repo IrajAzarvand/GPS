@@ -1,7 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView, ListView, DetailView
-from django.db.models import Q
-from .models import Product, Category
+from django.db.models import Q, Prefetch
+from django.http import JsonResponse
+from django.template.loader import render_to_string
+from django.core.cache import cache
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+from .models import Product, Category, ProductImage, Review
 
 
 class HomeView(TemplateView):
@@ -10,16 +15,38 @@ class HomeView(TemplateView):
     """
     template_name = 'home.html'
 
+    @method_decorator(cache_page(300))  # Cache for 5 minutes
+    def dispatch(self, *args, **kwargs):
+        return super().dispatch(*args, **kwargs)
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # Get featured products
-        context['featured_products'] = Product.objects.filter(
-            is_active=True,
-            is_featured=True
-        )[:6]
 
-        # Get all active categories
-        context['categories'] = Category.objects.filter(is_active=True)
+        # Cache key for featured products
+        cache_key = 'home_featured_products'
+        featured_products = cache.get(cache_key)
+
+        if featured_products is None:
+            # Use select_related and prefetch_related for optimization
+            featured_products = Product.objects.filter(
+                is_active=True,
+                is_featured=True
+            ).select_related('category').prefetch_related(
+                Prefetch('images', queryset=ProductImage.objects.filter(is_primary=True))
+            )[:6]
+            cache.set(cache_key, featured_products, 300)  # Cache for 5 minutes
+
+        context['featured_products'] = featured_products
+
+        # Cache key for categories
+        cache_key_categories = 'home_categories'
+        categories = cache.get(cache_key_categories)
+
+        if categories is None:
+            categories = Category.objects.filter(is_active=True)
+            cache.set(cache_key_categories, categories, 600)  # Cache for 10 minutes
+
+        context['categories'] = categories
 
         return context
 
@@ -34,7 +61,10 @@ class ProductListView(ListView):
     paginate_by = 12
 
     def get_queryset(self):
-        queryset = Product.objects.filter(is_active=True)
+        # Use select_related for category and prefetch_related for images
+        queryset = Product.objects.filter(is_active=True).select_related('category').prefetch_related(
+            Prefetch('images', queryset=ProductImage.objects.filter(is_primary=True))
+        )
 
         # Category filter
         category_slug = self.request.GET.get('category')
@@ -78,6 +108,14 @@ class ProductListView(ListView):
 
         return context
 
+    def render_to_response(self, context, **response_kwargs):
+        """Override to support AJAX requests"""
+        if self.request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            # Return only the products section for AJAX requests
+            products_html = render_to_string('products/_product_list.html', context, request=self.request)
+            return JsonResponse({'html': products_html})
+        return super().render_to_response(context, **response_kwargs)
+
 
 class ProductDetailView(DetailView):
     """
@@ -90,22 +128,70 @@ class ProductDetailView(DetailView):
     slug_url_kwarg = 'slug'
 
     def get_queryset(self):
-        return Product.objects.filter(is_active=True)
+        return Product.objects.filter(is_active=True).select_related('category').prefetch_related(
+            Prefetch('images', queryset=ProductImage.objects.all()),
+            Prefetch('reviews', queryset=Review.objects.select_related('user'))
+        )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         product = self.get_object()
 
-        # Related products (same category)
-        context['related_products'] = Product.objects.filter(
-            category=product.category,
-            is_active=True
-        ).exclude(pk=product.pk)[:4]
+        # Cache key for related products
+        cache_key = f'related_products_{product.category_id}_{product.pk}'
+        related_products = cache.get(cache_key)
 
-        # Product images
+        if related_products is None:
+            # Related products (same category) with optimization
+            related_products = Product.objects.filter(
+                category=product.category,
+                is_active=True
+            ).exclude(pk=product.pk).select_related('category').prefetch_related(
+                Prefetch('images', queryset=ProductImage.objects.filter(is_primary=True))
+            )[:4]
+            cache.set(cache_key, related_products, 600)  # Cache for 10 minutes
+
+        context['related_products'] = related_products
+
+        # Product images are already prefetched in get_queryset
         context['product_images'] = product.images.all()
 
         return context
+
+    def render_to_response(self, context, **response_kwargs):
+        """Override to support AJAX requests for product detail modal"""
+        if self.request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            # Return the full product detail template for modal
+            product_html = render_to_string('products/product_detail.html', context, request=self.request)
+            return JsonResponse({'html': product_html})
+        return super().render_to_response(context, **response_kwargs)
+
+
+class ProductSearchView(TemplateView):
+    """
+    AJAX search view for real-time product search
+    """
+    def get(self, request, *args, **kwargs):
+        query = request.GET.get('q', '').strip()
+        results = []
+
+        if len(query) >= 2:
+            products = Product.objects.filter(
+                Q(name__icontains=query) |
+                Q(description__icontains=query) |
+                Q(short_description__icontains=query) |
+                Q(sku__icontains=query),
+                is_active=True
+            )[:5]  # Limit to 5 results for performance
+
+            results = [{
+                'name': product.name,
+                'url': product.get_absolute_url(),
+                'image': product.images.first().image.url if product.images.exists() else None,
+                'price': product.get_discounted_price()
+            } for product in products]
+
+        return JsonResponse({'results': results})
 
 
 class CategoryListView(ListView):
