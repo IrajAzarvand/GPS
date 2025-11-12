@@ -159,7 +159,7 @@
                     <div class="d-flex justify-content-between align-items-start">
                         <div>
                             <h3 class="h5 mb-2">{{ device.name }}</h3>
-                            <p class="text-muted mb-2">{{ device.device_type.name }} - IMEI: {{ device.imei }}</p>
+                            <p class="text-muted mb-2">{{ device.device_type.name }} - ID: {{ device.imei|default:device.device_id }}</p>
                             <span class="device-status status-{{ device.status }}">
                                 {% if device.status == 'active' %}فعال{% elif device.status == 'inactive' %}غیرفعال{% else %}معلق{% endif %}
                             </span>

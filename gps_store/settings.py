@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',  # Added for intcomma filter
     # 'django.contrib.gis',  # For PostGIS spatial data - will add later
     'rest_framework',
     'rest_framework_simplejwt',

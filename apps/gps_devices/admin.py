@@ -54,9 +54,9 @@ class ProtocolAdmin(admin.ModelAdmin):
 
 @admin.register(Device)
 class DeviceAdmin(admin.ModelAdmin):
-    list_display = ('name', 'imei', 'user', 'device_type', 'status', 'last_location_time', 'expires_at')
+    list_display = ('name', 'imei', 'device_id', 'user', 'device_type', 'status', 'last_location_time', 'expires_at')
     list_filter = ('status', 'device_type', 'protocol', 'activated_at', 'expires_at')
-    search_fields = ('name', 'imei', 'serial_number', 'user__username', 'user__email')
+    search_fields = ('name', 'imei', 'device_id', 'serial_number', 'user__username', 'user__email')
     readonly_fields = ('created_at', 'updated_at', 'activated_at')
 
     fieldsets = (
@@ -64,7 +64,7 @@ class DeviceAdmin(admin.ModelAdmin):
             'fields': ('user', 'product', 'device_type', 'name')
         }),
         ('Identification', {
-            'fields': ('imei', 'serial_number', 'activation_code')
+            'fields': ('imei', 'device_id', 'serial_number', 'activation_code')
         }),
         ('Technical Details', {
             'fields': ('protocol', 'firmware_version', 'config_settings')

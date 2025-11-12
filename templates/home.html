@@ -23,33 +23,24 @@
         </div>
 
         <div class="categories-grid">
+            {% for category in categories %}
             <div class="category-card fade-in">
-                <div class="category-icon">🚗</div>
-                <h3>ردیاب خودرو</h3>
-                <p>ردیاب‌های پیشرفته برای نظارت و امنیت خودرو</p>
-                <a href="#" class="btn-outline">مشاهده محصولات</a>
+                {% if category.image %}
+                <img src="{{ category.image.url }}" alt="{{ category.name }}" class="category-image">
+                {% else %}
+                <div class="category-icon">
+                    {% if category.name == "ردیاب خودرو" %}🚗
+                    {% elif category.name == "ردیاب شخصی" %}👤
+                    {% elif category.name == "ردیاب حیوانات" %}🐕
+                    {% elif category.name == "ردیاب اشیاء" %}📦
+                    {% else %}📍{% endif %}
+                </div>
+                {% endif %}
+                <h3>{{ category.name }}</h3>
+                <p>{{ category.description|default:"ردیاب‌های پیشرفته برای نظارت و امنیت" }}</p>
+                <a href="{% url 'products:category_detail' category.slug %}" class="btn-outline">مشاهده محصولات</a>
             </div>
-
-            <div class="category-card fade-in">
-                <div class="category-icon">👤</div>
-                <h3>ردیاب شخصی</h3>
-                <p>ردیاب‌های کوچک و قابل حمل برای افراد</p>
-                <a href="#" class="btn-outline">مشاهده محصولات</a>
-            </div>
-
-            <div class="category-card fade-in">
-                <div class="category-icon">🐕</div>
-                <h3>ردیاب حیوانات</h3>
-                <p>ردیاب‌های مخصوص حیوانات خانگی و دام</p>
-                <a href="#" class="btn-outline">مشاهده محصولات</a>
-            </div>
-
-            <div class="category-card fade-in">
-                <div class="category-icon">📦</div>
-                <h3>ردیاب اشیاء</h3>
-                <p>ردیاب‌های چندمنظوره برای اشیاء با ارزش</p>
-                <a href="#" class="btn-outline">مشاهده محصولات</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -64,65 +55,54 @@
         </div>
 
         <div class="products-grid">
+            {% for product in featured_products %}
             <div class="product-card fade-in">
                 <div class="product-image">
-                    <img src="https://via.placeholder.com/200x150?text=GPS+Car+Tracker" alt="ردیاب خودرو">
+                    {% if product.images.first %}
+                    <img src="{{ product.images.first.image.url }}" alt="{{ product.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x150?text=No+Image" alt="{{ product.name }}">
+                    {% endif %}
                 </div>
                 <div class="product-info">
-                    <h3>ردیاب خودرو مدل GT-800</h3>
-                    <div class="product-price">2,490,000 تومان</div>
-                    <div class="product-rating">★★★★★</div>
+                    <h3>{{ product.name }}</h3>
+                    <div class="product-price">
+                        {% if product.discount_price %}
+                        <span class="text-decoration-line-through text-muted">{{ product.price|floatformat:0 }}</span>
+                        {{ product.discount_price|floatformat:0 }} تومان
+                        {% else %}
+                        {{ product.price|floatformat:0 }} تومان
+                        {% endif %}
+                    </div>
+                    <div class="product-rating">
+                        {% with rating=product.get_average_rating %}
+                        {% for i in "12345"|make_list %}
+                        {% if forloop.counter <= rating %}★{% else %}☆{% endif %}
+                        {% endfor %}
+                        {% endwith %}
+                    </div>
                     <div class="product-actions">
-                        <a href="#" class="btn-outline">مشاهده جزئیات</a>
-                        <a href="#" class="btn">افزودن به سبد</a>
+                        <a href="{% url 'products:product_detail' product.slug %}" class="btn-outline">مشاهده جزئیات</a>
+                        {% if product.is_in_stock %}
+                        <form method="post" action="{% url 'cart:add_to_cart' %}" class="d-inline ms-2">
+                            {% csrf_token %}
+                            <input type="hidden" name="product_id" value="{{ product.id }}">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn add-to-cart-btn">افزودن به سبد</button>
+                        </form>
+                        {% else %}
+                        <button class="btn" disabled>ناموجود</button>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-
-            <div class="product-card fade-in">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/200x150?text=Personal+Tracker" alt="ردیاب شخصی">
-                </div>
-                <div class="product-info">
-                    <h3>ردیاب شخصی مدل PT-200</h3>
-                    <div class="product-price">1,850,000 تومان</div>
-                    <div class="product-rating">★★★★☆</div>
-                    <div class="product-actions">
-                        <a href="#" class="btn-outline">مشاهده جزئیات</a>
-                        <a href="#" class="btn">افزودن به سبد</a>
-                    </div>
+            {% empty %}
+            <div class="col-12">
+                <div class="alert alert-info">
+                    هیچ محصول ویژه‌ای یافت نشد.
                 </div>
             </div>
-
-            <div class="product-card fade-in">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/200x150?text=Pet+Tracker" alt="ردیاب حیوانات">
-                </div>
-                <div class="product-info">
-                    <h3>ردیاب حیوانات مدل PET-100</h3>
-                    <div class="product-price">1,290,000 تومان</div>
-                    <div class="product-rating">★★★★★</div>
-                    <div class="product-actions">
-                        <a href="#" class="btn-outline">مشاهده جزئیات</a>
-                        <a href="#" class="btn">افزودن به سبد</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card fade-in">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/200x150?text=Asset+Tracker" alt="ردیاب اشیاء">
-                </div>
-                <div class="product-info">
-                    <h3>ردیاب اشیاء مدل AT-500</h3>
-                    <div class="product-price">2,150,000 تومان</div>
-                    <div class="product-rating">★★★★☆</div>
-                    <div class="product-actions">
-                        <a href="#" class="btn-outline">مشاهده جزئیات</a>
-                        <a href="#" class="btn">افزودن به سبد</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -175,4 +155,65 @@
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle add to cart buttons with AJAX
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const form = this.closest('form');
+            const formData = new FormData(form);
+            formData.append('csrfmiddlewaretoken', document.querySelector('[name=csrfmiddlewaretoken]').value);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Update cart counter
+                    const cartCounter = document.getElementById('cart-counter');
+                    if (cartCounter) {
+                        cartCounter.textContent = data.total_items;
+                    }
+                    // Show success message
+                    showMessage(data.message || 'محصول به سبد خرید اضافه شد.', 'success');
+                } else {
+                    showMessage(data.message || 'خطا در افزودن محصول به سبد خرید.', 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showMessage('خطا در ارتباط با سرور.', 'error');
+            });
+        });
+    });
+});
+
+function showMessage(message, type) {
+    // Create message element
+    const messageEl = document.createElement('div');
+    messageEl.className = `alert alert-${type === 'success' ? 'success' : 'danger'} alert-dismissible fade show position-fixed`;
+    messageEl.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    messageEl.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+
+    document.body.appendChild(messageEl);
+
+    // Auto remove after 3 seconds
+    setTimeout(() => {
+        messageEl.remove();
+    }, 3000);
+}
+</script>
 {% endblock %}

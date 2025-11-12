@@ -6,7 +6,7 @@ from .models import LocationData, Geofence, Alert
 class LocationDataAdmin(admin.ModelAdmin):
     list_display = ('device', 'latitude', 'longitude', 'timestamp', 'received_at', 'battery_level')
     list_filter = ('timestamp', 'received_at', 'device__device_type')
-    search_fields = ('device__name', 'device__imei', 'address')
+    search_fields = ('device__name', 'device__imei', 'device__device_id', 'address')
     readonly_fields = ('received_at',)
 
     fieldsets = (
@@ -67,7 +67,7 @@ class GeofenceAdmin(admin.ModelAdmin):
 class AlertAdmin(admin.ModelAdmin):
     list_display = ('device', 'alert_type', 'severity', 'is_read', 'is_resolved', 'created_at')
     list_filter = ('alert_type', 'severity', 'is_read', 'is_resolved', 'created_at')
-    search_fields = ('device__name', 'device__imei', 'message')
+    search_fields = ('device__name', 'device__imei', 'device__device_id', 'message')
     readonly_fields = ('created_at', 'resolved_at')
 
     fieldsets = (

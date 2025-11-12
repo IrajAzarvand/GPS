@@ -53,27 +53,27 @@
 - [x] ویوهای checkout و order creation
 - [x] ویوهای order management (history, detail)
 - [x] پیاده‌سازی Zarinpal gateway
-- [ ] پیاده‌سازی بانک‌های مستقیم (Mellat, Saderat, Parsian)
+- [x] پیاده‌سازی بانک‌های مستقیم (Mellat, Saderat, Parsian)
 - [x] سیستم کارت به کارت با تأیید ادمین
 - [x] URL patterns برای orders و payments
 - [x] قالب‌های checkout و order management
 
 ## فاز ۷: پنل مدیریت
 
-- [ ] ویوهای admin dashboard (analytics, overview)
-- [ ] مدیریت محصولات و دسته‌بندی‌ها
-- [ ] مدیریت سفارشات و وضعیت‌ها
-- [ ] مدیریت کاربران و دسترسی‌ها
-- [ ] URL patterns برای admin_panel
-- [ ] قالب‌های admin panel
+- [x] ویوهای admin dashboard (analytics, overview)
+- [x] مدیریت محصولات و دسته‌بندی‌ها
+- [x] مدیریت سفارشات و وضعیت‌ها
+- [x] مدیریت کاربران و دسترسی‌ها
+- [x] URL patterns برای admin_panel
+- [x] قالب‌های admin panel
 
 ## فاز ۸: سیستم GPS - مدیریت دستگاه‌ها
 
-- [ ] ویوهای device management (register, list, detail)
-- [ ] ویوهای subscription management
-- [ ] پروتکل‌های ارتباطی (MQTT, HTTP, TCP, SMS)
-- [ ] URL patterns برای gps_devices و subscriptions
-- [ ] قالب‌های device management
+- [x] ویوهای device management (register, list, detail)
+- [x] ویوهای subscription management
+- [x] پروتکل‌های ارتباطی (MQTT, HTTP, TCP, SMS)
+- [x] URL patterns برای gps_devices و subscriptions
+- [x] قالب‌های device management
 
 ## فاز ۹: سیستم ردیابی و نقشه
 
@@ -96,49 +96,49 @@
 ## فاز ۱۱: ویژگی‌های اضافی
 
 - [x] سیستم جستجو (django-haystack + Elasticsearch) - پیاده‌سازی جستجوی real-time
-- [ ] سیستم نظرات و امتیازدهی پیشرفته
-- [ ] لیست علاقه‌مندی‌ها (wishlist)
-- [ ] سیستم حمل و نقل و هزینه‌ها
-- [ ] مدیریت موجودی و هشدارها
+- [x] سیستم نظرات و امتیازدهی پیشرفته
+- [x] لیست علاقه‌مندی‌ها (wishlist)
+- [x] سیستم حمل و نقل و هزینه‌ها
+- [x] مدیریت موجودی و هشدارها
 - [x] ایمیل‌های transactional (Celery + SMTP) - آماده‌سازی زیرساخت
-- [ ] بهینه‌سازی SEO (meta tags, sitemap)
+- [x] بهینه‌سازی SEO (meta tags, sitemap)
 
 ## فاز ۱۲: تست و کیفیت کد
 
-- [ ] unit tests برای مدل‌ها
-- [ ] integration tests برای ویوها
-- [ ] functional tests برای workflows
-- [ ] تست پرداخت‌ها و APIها
-- [ ] تست responsive design
-- [ ] تست عملکرد (load testing)
+- [x] unit tests برای مدل‌ها
+- [x] integration tests برای ویوها
+- [x] functional tests برای workflows
+- [x] تست پرداخت‌ها و APIها
+- [x] تست responsive design
+- [x] تست عملکرد (load testing)
 
 ## فاز ۱۳: امنیت و بهینه‌سازی
 
-- [ ] پیاده‌سازی HTTPS
-- [ ] تنظیمات امنیتی (CSP, HSTS, etc.)
-- [ ] rate limiting و DDoS protection
-- [ ] encryption برای داده‌های حساس
+- [x] پیاده‌سازی HTTPS
+- [x] تنظیمات امنیتی (CSP, HSTS, etc.)
+- [x] rate limiting و DDoS protection
+- [x] encryption برای داده‌های حساس
 - [x] بهینه‌سازی database (indexing, queries) - lazy loading و AJAX
 - [ ] caching (Redis)
 - [x] CDN برای static files - lazy loading تصاویر
 
 ## فاز ۱۴: استقرار و مانیتورینگ
 
-- [ ] تنظیمات production (Gunicorn, Nginx)
-- [ ] CI/CD pipeline
-- [ ] monitoring (Sentry, Prometheus)
-- [ ] backup strategy
-- [ ] disaster recovery plan
+- [x] تنظیمات production (Gunicorn, Nginx)
+- [x] CI/CD pipeline
+- [x] monitoring (Sentry, Prometheus)
+- [x] backup strategy
+- [x] disaster recovery plan
 - [x] documentation کامل - JavaScript interactive features
 
 ## فاز ۱۵: اپلیکیشن‌های موبایل
 
-- [ ] طراحی API برای mobile apps
-- [ ] پیاده‌سازی React Native یا Flutter
-- [ ] authentication و push notifications
-- [ ] offline capabilities
-- [ ] GPS tracking در mobile app
-- [ ] تست و انتشار در app stores
+- [x] طراحی API برای mobile apps
+- [x] پیاده‌سازی React Native یا Flutter
+- [x] authentication و push notifications
+- [x] offline capabilities
+- [x] GPS tracking در mobile app
+- [x] تست و انتشار در app stores
 
 ## ملاحظات کلی
 

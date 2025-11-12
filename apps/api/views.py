@@ -252,7 +252,7 @@ class DeviceViewSet(viewsets.ModelViewSet):
     queryset = Device.objects.all()
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     filterset_fields = ['status', 'device_type', 'protocol']
-    search_fields = ['name', 'imei', 'serial_number']
+    search_fields = ['name', 'imei', 'device_id', 'serial_number']
     ordering_fields = ['created_at', 'name']
 
     def get_queryset(self):

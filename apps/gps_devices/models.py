@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
+from django.core.exceptions import ValidationError
 from apps.products.models import Product
 
 
@@ -89,7 +90,16 @@ class Device(models.Model):
     imei = models.CharField(
         max_length=15,
         unique=True,
+        blank=True,
+        null=True,
         validators=[RegexValidator(regex=r'^\d{15}$', message="IMEI must be 15 digits")]
+    )
+    device_id = models.CharField(
+        max_length=50,
+        unique=True,
+        blank=True,
+        null=True,
+        help_text="Alternative device identifier"
     )
     serial_number = models.CharField(max_length=50, unique=True)
     name = models.CharField(max_length=100, help_text="User-defined device name")
@@ -115,7 +125,8 @@ class Device(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.name} ({self.imei})"
+        identifier = self.imei or self.device_id or "No ID"
+        return f"{self.name} ({identifier})"
 
     def activate(self):
         """Activate the device"""
@@ -133,6 +144,11 @@ class Device(models.Model):
         """Check if device has active subscription"""
         from django.utils import timezone
         return self.expires_at and self.expires_at > timezone.now() and self.status == 'active'
+
+    def clean(self):
+        """Validate that at least one identifier is provided"""
+        if not self.imei and not self.device_id:
+            raise ValidationError("Either IMEI or Device ID must be provided.")
 
     def update_location(self, lat, lng, timestamp=None):
         """Update device location"""
