@@ -1465,3 +1465,6 @@ INFO 2025-11-13 10:07:55,063 basehttp 2604 15248 "GET /admin/jsi18n/ HTTP/1.1" 2
 INFO 2025-11-13 10:08:23,186 basehttp 2604 15248 "GET /admin/tracking/locationdata/ HTTP/1.1" 200 28545
 INFO 2025-11-13 12:51:34,674 autoreload 2604 10036 D:\Iraj\GpsStore\gps_store\settings.py changed, reloading.
 INFO 2025-11-13 12:51:37,409 autoreload 18516 18632 Watching for file changes with StatReloader
+INFO 2025-11-13 15:21:41,662 basehttp 18516 13736 "GET /admin/tracking/locationdata/ HTTP/1.1" 302 0
+INFO 2025-11-13 15:21:41,717 basehttp 18516 13736 "GET /admin/login/?next=/admin/tracking/locationdata/ HTTP/1.1" 200 4476
+WARNING 2025-11-13 15:21:41,926 basehttp 18516 13736 "GET /favicon.ico HTTP/1.1" 404 4912
