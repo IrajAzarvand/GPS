@@ -279,6 +279,8 @@ DATABASE_ROUTERS = []
 
 
 # Logging configuration
+# In production (Docker), we use console handler to avoid file permission issues
+# Logs will be captured by Docker and can be viewed with: docker compose logs web
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -297,52 +299,70 @@ LOGGING = {
         },
     },
     'handlers': {
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/django.log',
-            'formatter': 'verbose',
-        },
-        'security_file': {
-            'level': 'WARNING',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/security.log',
-            'formatter': 'verbose',
-        },
         'console': {
             'level': 'INFO',
             'class': 'logging.StreamHandler',
-            'formatter': 'simple',
-        },
-        'json_file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/production.log',
-            'formatter': 'json',
+            'formatter': 'verbose',
         },
     },
     'root': {
-        'handlers': ['console', 'file', 'json_file'],
+        'handlers': ['console'],
         'level': 'INFO',
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file', 'json_file'],
+            'handlers': ['console'],
             'level': 'INFO',
             'propagate': False,
         },
         'django.security': {
-            'handlers': ['security_file', 'json_file'],
+            'handlers': ['console'],
             'level': 'WARNING',
             'propagate': False,
         },
         'django.request': {
-            'handlers': ['file', 'json_file'],
+            'handlers': ['console'],
             'level': 'ERROR',
             'propagate': False,
         },
     },
 }
+
+# Try to add file handlers if logs directory is writable (for development)
+if DEBUG:
+    try:
+        logs_dir = BASE_DIR / 'logs'
+        logs_dir.mkdir(exist_ok=True)
+        
+        # Add file handlers only if directory is writable
+        if os.access(logs_dir, os.W_OK):
+            LOGGING['handlers']['file'] = {
+                'level': 'INFO',
+                'class': 'logging.FileHandler',
+                'filename': logs_dir / 'django.log',
+                'formatter': 'verbose',
+            }
+            LOGGING['handlers']['security_file'] = {
+                'level': 'WARNING',
+                'class': 'logging.FileHandler',
+                'filename': logs_dir / 'security.log',
+                'formatter': 'verbose',
+            }
+            LOGGING['handlers']['json_file'] = {
+                'level': 'INFO',
+                'class': 'logging.FileHandler',
+                'filename': logs_dir / 'production.log',
+                'formatter': 'json',
+            }
+            
+            # Update root and loggers to include file handlers
+            LOGGING['root']['handlers'] = ['console', 'file', 'json_file']
+            LOGGING['loggers']['django']['handlers'] = ['console', 'file', 'json_file']
+            LOGGING['loggers']['django.security']['handlers'] = ['security_file', 'json_file']
+            LOGGING['loggers']['django.request']['handlers'] = ['file', 'json_file']
+    except (OSError, PermissionError):
+        # If we can't create/write to logs directory, just use console
+        pass
 
 # Authentication backends
 AUTHENTICATION_BACKENDS = [

@@ -29,17 +29,30 @@ COPY . .
 # Create directories for static files and media
 RUN mkdir -p /app/staticfiles /app/media /app/logs
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
+# Copy and set permissions for entrypoint script
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash app \
     && chown -R app:app /app \
-    && chmod -R 755 /app/logs
-USER app
+    && chmod -R 755 /app/logs /app/staticfiles /app/media
+
+# Change entrypoint script ownership to root
+RUN chown root:root /docker-entrypoint.sh
+
+# Note: Entrypoint script runs as root to fix permissions, then switches to app user
+# collectstatic is now run in entrypoint script after volumes are mounted
+# This ensures proper permissions for mounted volumes
+
+# Keep as root for entrypoint (it will switch to app user)
+# USER app
 
 # Expose port
 EXPOSE 8000
+
+# Use entrypoint script
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Run gunicorn with config file
 CMD ["gunicorn", "--config", "gunicorn.conf.py", "gps_store.wsgi:application"]
