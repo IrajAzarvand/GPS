@@ -29,5 +29,19 @@ su -s /bin/bash app -c "cd /app && python manage.py collectstatic --noinput" || 
 
 # Switch to app user and execute the main command
 echo "Starting application as app user..."
-exec su -s /bin/bash app -c "cd /app && exec $@"
+# Change to app directory and switch user
+cd /app
+# Use runuser if available, otherwise use su with proper quoting
+if command -v runuser >/dev/null 2>&1; then
+    exec runuser -u app -- "$@"
+else
+    # Build command with proper quoting
+    CMD=""
+    for arg in "$@"; do
+        # Escape single quotes and wrap in single quotes
+        escaped_arg=$(printf '%s\n' "$arg" | sed "s/'/'\"'\"'/g")
+        CMD="$CMD '$escaped_arg'"
+    done
+    exec su -s /bin/sh app -c "cd /app && exec $CMD"
+fi
 
