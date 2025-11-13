@@ -34,11 +34,12 @@ RUN python manage.py collectstatic --noinput
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash app \
-    && chown -R app:app /app
+    && chown -R app:app /app \
+    && chmod -R 755 /app/logs
 USER app
 
 # Expose port
 EXPOSE 8000
 
-# Run gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "--timeout", "120", "gps_store.wsgi:application"]
+# Run gunicorn with config file
+CMD ["gunicorn", "--config", "gunicorn.conf.py", "gps_store.wsgi:application"]
