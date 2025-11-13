@@ -1463,3 +1463,5 @@ INFO 2025-11-13 09:27:00,879 basehttp 2604 5408 "GET /static/admin/img/icon-cloc
 INFO 2025-11-13 10:07:54,998 basehttp 2604 15248 "GET /admin/gps_devices/device/add/ HTTP/1.1" 200 46557
 INFO 2025-11-13 10:07:55,063 basehttp 2604 15248 "GET /admin/jsi18n/ HTTP/1.1" 200 12738
 INFO 2025-11-13 10:08:23,186 basehttp 2604 15248 "GET /admin/tracking/locationdata/ HTTP/1.1" 200 28545
+INFO 2025-11-13 12:51:34,674 autoreload 2604 10036 D:\Iraj\GpsStore\gps_store\settings.py changed, reloading.
+INFO 2025-11-13 12:51:37,409 autoreload 18516 18632 Watching for file changes with StatReloader

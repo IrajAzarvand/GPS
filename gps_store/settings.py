@@ -107,14 +107,19 @@ DATABASES = {
         'PASSWORD': os.getenv('DATABASE_PASSWORD', ''),
         'HOST': os.getenv('DATABASE_HOST', ''),
         'PORT': os.getenv('DATABASE_PORT', ''),
-        'OPTIONS': {} if os.getenv('DATABASE_ENGINE', 'django.db.backends.sqlite3') == 'django.db.backends.sqlite3' else {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'charset': 'utf8mb4',
-        },
+        'OPTIONS': {},
         'CONN_MAX_AGE': 60,
         'ATOMIC_REQUESTS': True,
     }
 }
+
+# Configure OPTIONS based on database engine
+database_engine = os.getenv('DATABASE_ENGINE', 'django.db.backends.sqlite3')
+if database_engine == 'django.db.backends.mysql':
+    DATABASES['default']['OPTIONS'] = {
+        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        'charset': 'utf8mb4',
+    }
 
 
 # Password validation
