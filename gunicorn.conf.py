@@ -16,9 +16,11 @@ timeout = 30
 keepalive = 2
 
 # Logging
+# Use stdout/stderr instead of files to avoid permission issues
+# Logs will be captured by Docker and can be viewed with: docker compose logs web
 loglevel = "info"
-accesslog = "/app/logs/gunicorn_access.log"
-errorlog = "/app/logs/gunicorn_error.log"
+accesslog = "-"  # stdout
+errorlog = "-"  # stderr
 access_log_format = '%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s" %(D)s'
 
 # Process naming

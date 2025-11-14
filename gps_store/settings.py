@@ -279,6 +279,8 @@ DATABASE_ROUTERS = []
 
 
 # Logging configuration
+# In production (Docker), we use console handler to avoid file permission issues
+# Logs will be captured by Docker and can be viewed with: docker compose logs web
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -297,52 +299,70 @@ LOGGING = {
         },
     },
     'handlers': {
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/django.log',
-            'formatter': 'verbose',
-        },
-        'security_file': {
-            'level': 'WARNING',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/security.log',
-            'formatter': 'verbose',
-        },
         'console': {
             'level': 'INFO',
             'class': 'logging.StreamHandler',
-            'formatter': 'simple',
-        },
-        'json_file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/production.log',
-            'formatter': 'json',
+            'formatter': 'verbose',
         },
     },
     'root': {
-        'handlers': ['console', 'file', 'json_file'],
+        'handlers': ['console'],
         'level': 'INFO',
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file', 'json_file'],
+            'handlers': ['console'],
             'level': 'INFO',
             'propagate': False,
         },
         'django.security': {
-            'handlers': ['security_file', 'json_file'],
+            'handlers': ['console'],
             'level': 'WARNING',
             'propagate': False,
         },
         'django.request': {
-            'handlers': ['file', 'json_file'],
+            'handlers': ['console'],
             'level': 'ERROR',
             'propagate': False,
         },
     },
 }
+
+# Try to add file handlers if logs directory is writable (for development)
+if DEBUG:
+    try:
+        logs_dir = BASE_DIR / 'logs'
+        logs_dir.mkdir(exist_ok=True)
+        
+        # Add file handlers only if directory is writable
+        if os.access(logs_dir, os.W_OK):
+            LOGGING['handlers']['file'] = {
+                'level': 'INFO',
+                'class': 'logging.FileHandler',
+                'filename': logs_dir / 'django.log',
+                'formatter': 'verbose',
+            }
+            LOGGING['handlers']['security_file'] = {
+                'level': 'WARNING',
+                'class': 'logging.FileHandler',
+                'filename': logs_dir / 'security.log',
+                'formatter': 'verbose',
+            }
+            LOGGING['handlers']['json_file'] = {
+                'level': 'INFO',
+                'class': 'logging.FileHandler',
+                'filename': logs_dir / 'production.log',
+                'formatter': 'json',
+            }
+            
+            # Update root and loggers to include file handlers
+            LOGGING['root']['handlers'] = ['console', 'file', 'json_file']
+            LOGGING['loggers']['django']['handlers'] = ['console', 'file', 'json_file']
+            LOGGING['loggers']['django.security']['handlers'] = ['security_file', 'json_file']
+            LOGGING['loggers']['django.request']['handlers'] = ['file', 'json_file']
+    except (OSError, PermissionError):
+        # If we can't create/write to logs directory, just use console
+        pass
 
 # Authentication backends
 AUTHENTICATION_BACKENDS = [
@@ -357,18 +377,28 @@ X_FRAME_OPTIONS = 'DENY'
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
-SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'True').lower() == 'true'
-SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'True').lower() == 'true'
-CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', 'True').lower() == 'true'
+# SSL redirect settings - default to False if not set (for development/IP-based access)
+SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'False').lower() == 'true'
+SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'False').lower() == 'true'
+CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', 'False').lower() == 'true'
 SESSION_COOKIE_HTTPONLY = True
 CSRF_COOKIE_HTTPONLY = True
 SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
 
 # Production security settings
+# Only enable SSL redirect if explicitly set in environment
+# Don't force SSL redirect in production if SSL is not configured
 if not DEBUG:
-    SECURE_SSL_REDIRECT = True
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
+    # Only enable SSL settings if explicitly requested via environment variable
+    # This allows running without SSL (e.g., behind a reverse proxy or for IP-based access)
+    if os.getenv('SECURE_SSL_REDIRECT', '').lower() == 'true':
+        SECURE_SSL_REDIRECT = True
+        SESSION_COOKIE_SECURE = True
+        CSRF_COOKIE_SECURE = True
+    else:
+        SECURE_SSL_REDIRECT = False
+        SESSION_COOKIE_SECURE = False
+        CSRF_COOKIE_SECURE = False
 else:
     SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = False
