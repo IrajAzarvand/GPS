@@ -1487,3 +1487,6 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'intcomma'
 {"timestamp": "2025-11-13 10:08:23,186", "level": "INFO", "module": "basehttp", "message": ""GET /admin/tracking/locationdata/ HTTP/1.1" 200 28545"}
 {"timestamp": "2025-11-13 12:51:34,674", "level": "INFO", "module": "autoreload", "message": "D:\Iraj\GpsStore\gps_store\settings.py changed, reloading."}
 {"timestamp": "2025-11-13 12:51:37,409", "level": "INFO", "module": "autoreload", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-13 15:21:41,662", "level": "INFO", "module": "basehttp", "message": ""GET /admin/tracking/locationdata/ HTTP/1.1" 302 0"}
+{"timestamp": "2025-11-13 15:21:41,717", "level": "INFO", "module": "basehttp", "message": ""GET /admin/login/?next=/admin/tracking/locationdata/ HTTP/1.1" 200 4476"}
+{"timestamp": "2025-11-13 15:21:41,926", "level": "WARNING", "module": "basehttp", "message": ""GET /favicon.ico HTTP/1.1" 404 4912"}

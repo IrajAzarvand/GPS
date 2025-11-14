@@ -266,7 +266,21 @@ def real_time_tracking(request, device_id):
     """
     device = get_object_or_404(Device, id=device_id, user=request.user)
 
+    recent_locations = LocationData.objects.filter(
+        device=device,
+        timestamp__gte=timezone.now() - timezone.timedelta(hours=1)
+    ).order_by('timestamp')
+
+    locations_data = [{
+        'latitude': float(loc.latitude),
+        'longitude': float(loc.longitude),
+        'speed': float(loc.speed) if loc.speed else None,
+        'timestamp': loc.timestamp.isoformat(),
+        'battery_level': loc.battery_level,
+    } for loc in recent_locations]
+
     context = {
         'device': device,
+        'initial_locations': json.dumps(locations_data),
     }
     return render(request, 'tracking/real_time_tracking.html', context)

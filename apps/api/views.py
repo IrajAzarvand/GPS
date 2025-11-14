@@ -1,4 +1,4 @@
-from rest_framework import viewsets, status, permissions
+from rest_framework import viewsets, status, permissions, generics
 from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
@@ -343,3 +343,17 @@ class PaymentRecordViewSet(viewsets.ReadOnlyModelViewSet):
 
     def get_queryset(self):
         return PaymentRecord.objects.filter(subscription__user=self.request.user)
+
+
+class ProtocolCreateView(generics.CreateAPIView):
+    """View for creating new protocols"""
+    queryset = Protocol.objects.all()
+    serializer_class = ProtocolSerializer
+    permission_classes = [permissions.IsAdminUser]
+
+
+class ProtocolUpdateView(generics.UpdateAPIView):
+    """View for updating existing protocols"""
+    queryset = Protocol.objects.all()
+    serializer_class = ProtocolSerializer
+    permission_classes = [permissions.IsAdminUser]

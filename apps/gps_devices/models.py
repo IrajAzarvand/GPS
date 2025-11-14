@@ -59,6 +59,7 @@ class Protocol(models.Model):
     # Message format
     message_format = models.JSONField(default=dict, help_text="JSON schema for message format")
     update_frequency_seconds = models.PositiveIntegerField(default=60, help_text="How often device sends updates")
+    dynamic_config = models.JSONField(default=dict, blank=True, help_text="Dynamic settings for the protocol (e.g., server address, port, certificates)")
 
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -108,6 +109,8 @@ class Device(models.Model):
     protocol = models.ForeignKey(Protocol, on_delete=models.CASCADE)
     firmware_version = models.CharField(max_length=20, blank=True)
     config_settings = models.JSONField(default=dict, help_text="Device-specific configuration")
+    port_config = models.JSONField(default=dict, blank=True, help_text="Dynamic port settings (e.g., dedicated port or range)")
+    assigned_port = models.PositiveIntegerField(null=True, blank=True, help_text="Assigned port for the device")
 
     # Status and location
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='inactive')

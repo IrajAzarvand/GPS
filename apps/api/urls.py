@@ -5,6 +5,7 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
 from apps.api import views
+from apps.api.viewsets import ProtocolHandlerViewSet
 
 # Create a router and register our viewsets with it
 router = routers.DefaultRouter()
@@ -32,6 +33,7 @@ router.register(r'alerts', views.AlertViewSet)
 router.register(r'subscription-plans', views.SubscriptionPlanViewSet)
 router.register(r'subscriptions', views.SubscriptionViewSet)
 router.register(r'payment-records', views.PaymentRecordViewSet)
+router.register(r'protocol-handlers', ProtocolHandlerViewSet, basename='protocol-handler')
 
 # Schema view for Swagger/OpenAPI documentation
 schema_view = get_schema_view(
@@ -62,4 +64,6 @@ urlpatterns = [
 
     # Cart current endpoint
     path('cart/current/', views.CartViewSet.as_view({'get': 'current'}), name='cart-current'),
+    path('protocols/create/', views.ProtocolCreateView.as_view(), name='protocol-create'),
+    path('protocols/<int:pk>/update/', views.ProtocolUpdateView.as_view(), name='protocol-update'),
 ]
