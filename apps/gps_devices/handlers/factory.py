@@ -4,12 +4,12 @@ from .http_handler import HTTPHandler
 
 class ProtocolFactory:
     @staticmethod
-    def create_handler(protocol_type, **kwargs):
+    def create_handler(device, protocol_type, **kwargs):
         if protocol_type.lower() == 'tcp':
-            return TCPHandler(kwargs.get('host'), kwargs.get('port'))
+            return TCPHandler(device, kwargs.get('host'), kwargs.get('port'))
         elif protocol_type.lower() == 'mqtt':
-            return MQTTHandler(kwargs.get('broker'), kwargs.get('port'), kwargs.get('topic'))
+            return MQTTHandler(device, kwargs.get('broker'), kwargs.get('port'), kwargs.get('topic'))
         elif protocol_type.lower() == 'http':
-            return HTTPHandler(kwargs.get('url'))
+            return HTTPHandler(device, kwargs.get('url'))
         else:
             raise ValueError(f"Unknown protocol type: {protocol_type}")

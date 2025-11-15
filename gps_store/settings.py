@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-$k^$wtq^$g=%t%^@2^*8rve0s_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,testserver').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,testserver,bruna.ir').split(',')
 
 
 # Application definition
@@ -270,9 +270,8 @@ CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 600  # 10 minutes
 CACHE_MIDDLEWARE_KEY_PREFIX = 'gpsstore'
 
-# Session caching
-SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-SESSION_CACHE_ALIAS = 'default'
+# Session storage
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 # Database query caching
 DATABASE_ROUTERS = []
@@ -377,13 +376,17 @@ X_FRAME_OPTIONS = 'DENY'
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
+# Trust proxy headers for SSL detection
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # SSL redirect settings - default to False if not set (for development/IP-based access)
 SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'False').lower() == 'true'
 SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'False').lower() == 'true'
 CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', 'False').lower() == 'true'
 SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = 'Lax'
 CSRF_COOKIE_HTTPONLY = True
 SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
+CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', 'https://bruna.ir,https://www.bruna.ir').split(',')
 
 # Production security settings
 # Only enable SSL redirect if explicitly set in environment
@@ -409,6 +412,16 @@ if DEBUG:
     SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = False
     CSRF_COOKIE_SECURE = False
+
+# Log security settings for debugging
+import logging
+logger = logging.getLogger(__name__)
+logger.info(f"DEBUG: {DEBUG}")
+logger.info(f"SECURE_SSL_REDIRECT: {SECURE_SSL_REDIRECT}")
+logger.info(f"SESSION_COOKIE_SECURE: {SESSION_COOKIE_SECURE}")
+logger.info(f"SESSION_COOKIE_HTTPONLY: {SESSION_COOKIE_HTTPONLY}")
+logger.info(f"SESSION_COOKIE_SAMESITE: {SESSION_COOKIE_SAMESITE}")
+logger.info(f"CSRF_COOKIE_SECURE: {CSRF_COOKIE_SECURE}")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

@@ -1,5 +1,37 @@
+import logging
 from django.contrib import admin
-from .models import DeviceType, Protocol, Device
+from django import forms
+from django.utils import timezone
+from datetime import timedelta
+from .models import DeviceType, Protocol, Device, RawGPSData
+
+logger = logging.getLogger(__name__)
+
+
+class DateRangeFilter(admin.SimpleListFilter):
+    title = 'Date Range'
+    parameter_name = 'date_range'
+
+    def lookups(self, request, model_admin):
+        return (
+            ('today', 'Today'),
+            ('yesterday', 'Yesterday'),
+            ('week', 'Past 7 days'),
+            ('month', 'This month'),
+        )
+
+    def queryset(self, request, queryset):
+        now = timezone.now()
+        if self.value() == 'today':
+            return queryset.filter(received_at__date=now.date())
+        elif self.value() == 'yesterday':
+            yesterday = now.date() - timedelta(days=1)
+            return queryset.filter(received_at__date=yesterday)
+        elif self.value() == 'week':
+            week_ago = now - timedelta(days=7)
+            return queryset.filter(received_at__gte=week_ago)
+        elif self.value() == 'month':
+            return queryset.filter(received_at__year=now.year, received_at__month=now.month)
 
 
 @admin.register(DeviceType)
@@ -94,3 +126,40 @@ class DeviceAdmin(admin.ModelAdmin):
             device.deactivate()
         self.message_user(request, f"{queryset.count()} device(s) deactivated.")
     deactivate_devices.short_description = "Deactivate selected devices"
+
+
+@admin.register(RawGPSData)
+class RawGPSDataAdmin(admin.ModelAdmin):
+    list_display = ('device', 'protocol', 'received_at', 'processed', 'ip_address')
+    list_filter = ('protocol', 'processed', 'device', DateRangeFilter)
+    search_fields = ('raw_data', 'ip_address')
+    readonly_fields = ('received_at', 'processed_at', 'error_message')
+
+    def get_queryset(self, request):
+        logger.info("RawGPSDataAdmin: Getting queryset")
+        try:
+            qs = super().get_queryset(request)
+            logger.info(f"RawGPSDataAdmin: Queryset count: {qs.count()}")
+            return qs
+        except Exception as e:
+            logger.error(f"RawGPSDataAdmin: Error in get_queryset: {e}")
+            raise
+
+    fieldsets = (
+        ('Data Information', {
+            'fields': ('device', 'protocol', 'received_at', 'ip_address')
+        }),
+        ('Raw Data', {
+            'fields': ('raw_data',),
+            'classes': ('collapse',)
+        }),
+        ('Processing Status', {
+            'fields': ('processed', 'processed_at', 'error_message')
+        }),
+    )
+
+    def formfield_for_dbfield(self, db_field, request, **kwargs):
+        if db_field.name == 'raw_data':
+            kwargs['widget'] = forms.Textarea(attrs={'readonly': True, 'rows': 10, 'cols': 80})
+            return db_field.formfield(**kwargs)
+        return super().formfield_for_dbfield(db_field, request, **kwargs)

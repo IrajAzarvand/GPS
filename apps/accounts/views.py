@@ -1,3 +1,4 @@
+import logging
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
@@ -9,6 +10,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.utils.translation import gettext_lazy as _
 from .models import UserProfile, Address
 from .forms import UserRegistrationForm, UserLoginForm, UserProfileForm, AddressForm
+
+logger = logging.getLogger(__name__)
 
 
 class RegisterView(CreateView):
@@ -51,12 +54,15 @@ class LoginView(TemplateView):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
+                logger.info(f"User {user.username} logged in successfully. Session key: {request.session.session_key}")
                 messages.success(request, _('Welcome back!'))
                 next_url = request.GET.get('next', 'accounts:dashboard')
                 return redirect(next_url)
             else:
+                logger.warning(f"Failed login attempt for username/email: {username}")
                 messages.error(request, _('Invalid username or password.'))
         else:
+            logger.warning(f"Invalid login form submission: {form.errors}")
             messages.error(request, _('Please correct the errors below.'))
 
         context = self.get_context_data()
@@ -68,6 +74,7 @@ def logout_view(request):
     """
     User logout view
     """
+    logger.info(f"User {request.user.username if request.user.is_authenticated else 'anonymous'} logged out. Session key before logout: {request.session.session_key}")
     logout(request)
     messages.success(request, _('You have been logged out successfully.'))
     return redirect('home')
@@ -81,6 +88,7 @@ class DashboardView(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        logger.info(f"Dashboard accessed by {self.request.user.username}. Session key: {self.request.session.session_key}")
         user = self.request.user
 
         # Recent orders
@@ -166,6 +174,7 @@ def address_delete_view(request, pk):
     """
     Delete address view
     """
+    logger.info(f"Address delete attempt by user {request.user.username if request.user.is_authenticated else 'anonymous'} for address pk={pk}")
     address = get_object_or_404(request.user.addresses, pk=pk)
     if request.method == 'POST':
         address.delete()

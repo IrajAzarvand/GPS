@@ -1,3 +1,4 @@
+import logging
 from ..handlers.factory import ProtocolFactory
 from ..models import Device
 
@@ -25,7 +26,7 @@ class CommunicationService:
             if 'url' not in kwargs:
                 kwargs['url'] = 'http://default-url.com'  # Placeholder, adjust as needed
 
-        handler = ProtocolFactory.create_handler(protocol_type, **kwargs)
+        handler = ProtocolFactory.create_handler(device, protocol_type, **kwargs)
         self.handlers[device.id] = handler
         return handler
 
@@ -42,5 +43,6 @@ class CommunicationService:
     def handle_data(self, device: Device):
         handler = self.get_handler(device)
         data = handler.receive_data()
+        logging.info(f"Data received from device {device.id}: {data}")
         # TODO: Process the data, e.g., parse and save to database
         return data

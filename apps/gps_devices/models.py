@@ -165,3 +165,45 @@ class Device(models.Model):
         verbose_name = 'GPS Device'
         verbose_name_plural = 'GPS Devices'
         ordering = ['-created_at']
+
+
+class RawGPSData(models.Model):
+    """
+    Stores raw GPS data received from devices before processing
+    """
+    device = models.ForeignKey(Device, on_delete=models.CASCADE, related_name='raw_data', null=True, blank=True)
+    protocol = models.ForeignKey(Protocol, on_delete=models.CASCADE, null=True, blank=True)
+    raw_data = models.TextField(help_text="Raw data received from the device")
+    received_at = models.DateTimeField(auto_now_add=True)
+    ip_address = models.GenericIPAddressField(null=True, blank=True, help_text="Source IP address")
+    processed = models.BooleanField(default=False, help_text="Whether this data has been processed")
+    processed_at = models.DateTimeField(null=True, blank=True)
+    error_message = models.TextField(blank=True, help_text="Error message if processing failed")
+
+    def __str__(self):
+        device_name = self.device.name if self.device else "Unknown Device"
+        return f"Raw data from {device_name} at {self.received_at}"
+
+    def mark_processed(self):
+        """Mark the data as processed"""
+        from django.utils import timezone
+        self.processed = True
+        self.processed_at = timezone.now()
+        self.save()
+
+    def mark_error(self, error_msg):
+        """Mark processing as failed with error message"""
+        from django.utils import timezone
+        self.processed = True
+        self.processed_at = timezone.now()
+        self.error_message = error_msg
+        self.save()
+
+    class Meta:
+        verbose_name = 'Raw GPS Data'
+        verbose_name_plural = 'Raw GPS Data'
+        ordering = ['-received_at']
+        indexes = [
+            models.Index(fields=['device', '-received_at']),
+            models.Index(fields=['processed', 'received_at']),
+        ]
